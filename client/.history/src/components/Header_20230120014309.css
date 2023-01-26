@@ -1,0 +1,30 @@
+/* body {
+    margin: 0;
+    
+} */
+
+nav {
+    height: 4em;
+    position: sticky;
+    top: 0;
+    line-height: 4em;
+    
+    /* text-align: center; */
+    /* background-color: #f5f3f3; */
+    /* color: blue; */
+    /* font-family: sans-serif; */
+    transition: transform 150ms ease-in-out;
+}
+
+nav.nav-bar--hidden {
+    transform: translateY(-100%);
+}
+
+main {
+    padding: 2em;
+    font-family: sans-serif;
+}
+header{
+    background-color: #f5f3f3 ;
+    
+}
