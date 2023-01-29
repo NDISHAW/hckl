@@ -56,9 +56,9 @@ export default function Slider() {
   };
 
   return (
-    <div
+    <section
       ref={slideRef}
-      className="max-w-screen-xl m-auto relative h-80vh md:h-50vh md:flex-auto justify-items-center "
+      className="hero-slider relative gap-5 max-w-screen-xl m-auto  h-80vh md:h-50vh md:flex-auto justify-items-center"
     >
       <div className="aspect-w-16 aspect-h-9 ">
         <img src={featuredProducts[currentIndex]} alt="Slider" />
@@ -78,6 +78,6 @@ export default function Slider() {
           <AiOutlineVerticalLeft size={30} />
         </button>
       </div>
-    </div>
+    </section>
   );
 }

@@ -32,6 +32,11 @@ const reducer = (state, action) => {
         ...state,
         cartItems: action.cartItems,
       };
+    case actionType.SET_POPUPITEM:
+      return {
+        ...state,
+        cartItems: action.popupItems,
+      };
 
     default:
       return state;

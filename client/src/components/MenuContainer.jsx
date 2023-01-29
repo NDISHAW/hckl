@@ -9,7 +9,7 @@ import './Header/Header.css'
 
 
 const MenuContainer = () => {
-  const [filter, setFilter] = useState("chicken");
+  const [filter, setFilter] = useState("hospital");
 
   const [{ foodItems }, dispatch] = useStateValue();
 

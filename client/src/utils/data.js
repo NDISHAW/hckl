@@ -33,38 +33,39 @@ export const heroData = [
     // price: "5.25",
     imageSrc: microscope,
   },
+  
 ];
 
 export const categories = [
   {
     id: 1,
     name: "Hospital Products",
-    urlParamName: "chicken",
+    urlParamName: "hospital",
   },
   {
     id: 2,
     name: "Laborotary Products",
-    urlParamName: "curry",
+    urlParamName: "lab",
   },
   {
     id: 3,
     name: "Microscopes",
-    urlParamName: "rice",
+    urlParamName: "microscopes",
   },
   {
     id: 4,
     name: "Veterinary Products",
-    urlParamName: "fish",
+    urlParamName: "vet",
   },
   {
     id: 5,
-    name: "Fruits",
-    urlParamName: "fruits",
+    name: "Research Products",
+    urlParamName: "research",
   },
   {
     id: 6,
-    name: "Icecreams",
-    urlParamName: "icecreams",
+    name: "Common Products",
+    urlParamName: "commonproducts",
   },
 
   {
