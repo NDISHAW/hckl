@@ -251,7 +251,7 @@ const CreateContainer = () => {
               required
               value={calories}
               onChange={(e) => setCalories(e.target.value)}
-              placeholder="Calories"
+              placeholder="Description"
               className="w-full h-full text-lg bg-transparent outline-none border-none placeholder:text-gray-400 text-textColor"
             />
           </div>
