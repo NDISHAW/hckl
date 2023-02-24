@@ -15,13 +15,13 @@ const MainContainer = () => {
   return (
     <section
       className="w-full my-6"
-      id="menu"
+      id="menu"?
       data-aos="fade-up-left"
       data-aos-duration="3000"
     >
       <div className="w-full flex flex-col items-center justify-center">
         <p className="text-2xl font-semibold capitalize text-headingColor relative before:absolute before:rounded-lg before:content before:w-16 before:h-1 before:-bottom-2 before:left-0 before:bg-gradient-to-tr from-blue-300 to-blue-900 transition-all ease-in-out duration-100 mr-auto">
-          Laborotary Products
+          Our Products
         </p>
 
         <div
@@ -60,7 +60,33 @@ const MainContainer = () => {
                   } group-hover:text-white`}
                 >
                   {category.name}
-                </p>      
+                </p>
+
+                {/* {category.subCartegories?.map((sub) => (
+                  <motion.div
+                whileTap={{ scale: 0.75 }}
+                key={category.id}
+                className="w-275 h-[575px] min-w-[275px] md:w-300 md:min-w-[300px]  bg-cardOverlay rounded-lg py-2 px-4  my-12 backdrop-blur-lg hover:drop-shadow-lg flex flex-col items-center justify-evenly relative">
+                    <div
+                      className={`text-sm ${
+                        filter === category.urlParamName
+                          ? "text-white"
+                          : "text-textColor"
+                      } group-hover:text-white`}
+                    >
+                      {sub.Equipment}
+                    </div>
+                    <div
+                      className={`text-sm ${
+                        filter === category.urlParamName
+                          ? "text-white"
+                          : "text-textColor"
+                      } group-hover:text-white`}
+                    >
+                      {sub.Reagents}
+                    </div>
+                  </motion.div>
+                ))} */}
               </motion.div>
             ))}
         </div>

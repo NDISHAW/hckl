@@ -10,7 +10,7 @@ import {
   GeometryIcon,
   KarmaIcon,
   TeslaIcon,
-} from "../components/Products/assets/picturesExport";
+} from "../components/";
 
 export const heroData = [
   {
@@ -88,13 +88,13 @@ export const labEquipment = [
   {
     id: 7,
     name: "Immmunoblots",
-    logo: LamborghiniIcon,
+    logo: KarmaIcon,
     text: `Geometry`,
     width: "160px",
   },
   {
     id: 8,
-    logo: TeslaIcon,
+    logo: GeometryIcon,
     text: `Geometry`,
     width: "160px",
   },
@@ -103,7 +103,7 @@ export const labReagents = [
   {
     id: 0,
     name: "Rhematology",
-    logo: LamborghiniIcon,
+    logo: KarmaIcon,
     text: `Geometry`,
     width: "160px",
   },
@@ -124,7 +124,7 @@ export const labReagents = [
   {
     id: 4,
     name: "Endocrionology",
-    logo: TeslaIcon,
+    logo: FerrariIcon,
     text: `Ferrari`,
     width: "150px",
   },
@@ -145,7 +145,7 @@ export const labReagents = [
   {
     id: 7,
     name: "ClinicalChemistry",
-    logo: LamborghiniIcon,
+    logo: BugattiIcon,
     text: `Bugatti`,
     width: "150px",
   },
@@ -159,7 +159,7 @@ export const labReagents = [
   {
     id: 9,
     name: "Molecular",
-    logo: TeslaIcon,
+    logo: BugattiIcon,
     text: `Bugatti`,
     width: "150px",
   },

@@ -10,7 +10,6 @@ import About from './components/About/About';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import HomeContainer from './components/HomeContainer';
-import Products from "./components/Products/Products";
 
 const App = () => {
   const [{ foodItems }, dispatch] = useStateValue();

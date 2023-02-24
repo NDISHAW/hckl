@@ -10,7 +10,6 @@ import About from './components/About/About';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import HomeContainer from './components/HomeContainer';
-import Products from "./components/Products/Products";
 
 const App = () => {
   const [{ foodItems }, dispatch] = useStateValue();
@@ -46,7 +45,7 @@ const App = () => {
         <main className="mt-14 md:mt-20 px-4 md:px-16 py-4 w-full scrollbar-hide">
           <Routes>
             <Route path="/*" element={<HomeContainer />} />
-            <Route path="/products" element={<Products />} />
+            <Route path="/products" element={<Pro />} />
 
             <Route path="/createItem" element={<CreateContainer />} />
             <Route path="/about" element={<About />} />

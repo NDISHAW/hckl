@@ -159,7 +159,7 @@ export const labReagents = [
   {
     id: 9,
     name: "Molecular",
-    logo: TeslaIcon,
+    logo: BugattiIcon,
     text: `Bugatti`,
     width: "150px",
   },

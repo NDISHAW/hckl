@@ -124,7 +124,7 @@ export const labReagents = [
   {
     id: 4,
     name: "Endocrionology",
-    logo: TeslaIcon,
+    logo: FerrariIcon,
     text: `Ferrari`,
     width: "150px",
   },
@@ -159,7 +159,7 @@ export const labReagents = [
   {
     id: 9,
     name: "Molecular",
-    logo: TeslaIcon,
+    logo: BugattiIcon,
     text: `Bugatti`,
     width: "150px",
   },
