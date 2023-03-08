@@ -1,0 +1,162 @@
+import React, { useEffect, useState } from "react";
+// import { IoFastFood } from "react-icons/io5";
+import { categories, labReagents,labEquipment } from "../utils/data";
+import { motion } from "framer-motion";
+import RowContainer from "./RowContainer";
+import { useStateValue } from "../context/StateProvider";
+import { Icon } from "@iconify/react";
+import "./Header/Header.css";
+import SliderNav from "./Products/LabComponents/SliderNav";
+import "../components/Products/Products.css"
+import useSliderAminated from "../hooks/useSliderAminated"
+
+const MainContainer = () => {
+  const [filter, setFilter] = useState("hospital");
+  const [subcate, setSubcate] = useState("Rhematology");  
+
+  const [{ foodItems }, dispatch] = useStateValue();
+  const {
+    labEqupmentClassName,
+    labReagentsClassName,
+    clickedLabEquipment,
+    handleClickAction,
+    clickedlabReagents,
+  } = useSliderAminated();
+  return (
+    <div
+      className="w-screen h-auto flex flex-col bg-primary scrollbar-hide justify-center"
+      id="menu"
+      justify-center
+    >
+      {/* id="menu" data-aos="fade-up-left" data-aos-duration="3000" > */}
+      <SliderNav
+        clickedLabEquipment={clickedLabEquipment}
+        handleClickAction={handleClickAction}
+        clickedlabReagents={clickedlabReagents}
+      />{" "}
+      <div className="w-full flex flex-col items-center justify-center">
+        <p className="text-2xl font-semibold capitalize text-headingColor relative before:absolute before:rounded-lg before:content before:w-16 before:h-1 before:-bottom-2 before:left-0 before:bg-gradient-to-tr from-blue-300 to-blue-900 transition-all ease-in-out duration-100 mr-auto">
+          Laborotary Products
+        </p>
+
+        <div
+          id="ListSport"
+          className={`w-full flex items-center justify-start lg:justify-center gap-8 py-6 overflow-x-scroll scrollbar-none badgesList ${labEqupmentClassName}`}
+        >
+          {labEquipment &&
+            labEquipment.map((category) => (
+              <motion.div
+                whileTap={{ scale: 0.75 }}
+                key={category.id}
+                className={`group ${
+                  filter === category.urlParamName ? "bg-blue-400 " : "bg-card"
+                } w-34 min-w-[94px] h-28 cursor-pointer rounded-lg drop-shadow-xl flex flex-col gap-3 items-center justify-center hover:bg-blue-900 `}
+                onClick={() => setFilter(category.urlParamName)}
+              >
+                <div
+                  className={`w-10 h-10 rounded-full shadow-lg ${
+                    filter === category.urlParamName ? "bg-white" : "bg-Main"
+                  } group-hover:bg-white flex items-center justify-center`}
+                >
+                  <Icon
+                    icon="medical-icon:hospital"
+                    className={`${
+                      filter === category.urlParamName
+                        ? "text-textColor"
+                        : "text-white"
+                    } group-hover:text-textColor text-lg`}
+                  />
+                </div>
+                <p
+                  className={`text-m ${
+                    filter === category.urlParamName
+                      ? "text-white"
+                      : "text-textColor"
+                  } group-hover:text-white`}
+                >
+                  {category.urlParamName}
+                </p>
+              </motion.div>
+            ))}
+        </div>
+        <div className="w-full">
+          <RowContainer
+            flag={false}
+            data={foodItems?.filter((n) => n.category == filter)}
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default MainContainer;
+
+// import React, { useEffect, useRef, useState } from "react";
+// import HomeContainer from "./HomeContainer";
+// import { motion } from "framer-motion";
+// import { MdChevronLeft, MdChevronRight } from "react-icons/md";
+// import RowContainer from "./RowContainer";
+// import { useStateValue } from "../context/StateProvider";
+// import MenuContainer from "./MenuContainer";
+// import CartContainer from "./CartContainer";
+// // import Slider from "./Slider/Slider";
+// import SliderNav from './Products/LabComponents/SliderNav';
+
+// const MainContainer = () => {
+//   const [{ foodItems, cartShow }, dispatch] = useStateValue();
+//   const [scrollValue, setScrollValue] = useState(0);
+
+//   useEffect(() => {}, [scrollValue, cartShow]);
+
+//   return (
+//     <>
+//       {/* <Slider /> */}
+//       <div
+//         className="w-full h-auto flex flex-col items-center justify-center "
+//         data-aos="fade-up-left"
+//         data-aos-duration="3000"
+//       >
+//         {/* <HomeContainer /> */}
+
+//         <div className="w-full my-6">
+//           <div className="w-full flex items-center justify-between">
+//             <p className="text-2xl font-semibold capitalize text-headingColor relative before:absolute before:rounded-lg before:content before:w-32 before:h-1 before:-bottom-2 before:left-0 before:bg-gradient-to-tr from-blue-300 to-blue-900 transition-all ease-in-out duration-100">
+//               Common Products
+//             </p>
+
+//             <div className="hidden md:flex gap-3 items-center">
+//               {/*Next buttons */}
+//               <motion.div
+//                 whileTap={{ scale: 0.75 }}
+//                 className="w-8 h-8 rounded-lg bg-blue-300 hover:bg-blue-900 cursor-pointer  hover:shadow-lg flex items-center justify-center"
+//                 onClick={() => setScrollValue(-200)}
+//               >
+//                 <MdChevronLeft className="text-lg text-white" />
+//               </motion.div>
+//               <motion.div
+//                 whileTap={{ scale: 0.75 }}
+//                 className="w-8 h-8 rounded-lg bg-blue-300 hover:bg-blue-900 cursor-pointer transition-all duration-100 ease-in-out hover:shadow-lg flex items-center justify-center"
+//                 onClick={() => setScrollValue(200)}
+//               >
+//                 <MdChevronRight className="text-lg text-white" />
+//               </motion.div>
+//             </div>
+//           </div>
+//           {/* products row */}
+//           <RowContainer
+//             scrollValue={scrollValue}
+//             flag={true}
+//             data={foodItems?.filter((n) => n.category === "hospital")}
+//           />
+//         </div>
+//       </div>
+
+//       <MenuContainer />
+
+//       {cartShow && <CartContainer />}
+//     </>
+//   );
+// };
+
+// export default MainContainer;
