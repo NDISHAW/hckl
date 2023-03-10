@@ -41,12 +41,7 @@ const Sidenav = () => {
             {/* <p className="text-headingColor text-xl font-bold"> City</p> */}
           </Link>
         </div>
-        <motion.ul
-          initial={{ opacity: 0, x: 200 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: 200 }}
-          className="gap-24"
-        >
+        <motion.ul className="flex items-col gap-24 ">
           <Link to={"/"}>
             <li className="text-lg text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
               Home
