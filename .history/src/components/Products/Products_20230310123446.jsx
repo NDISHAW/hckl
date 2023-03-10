@@ -125,7 +125,7 @@ export default function Products({ color }) {
                   }
                   id="link1"
                 >
-                  <MenuContainer />
+
                 </div>
 
                 <div
@@ -151,7 +151,7 @@ export default function Products({ color }) {
         </div>
       </section>
       {/* <Slider/> */}
-      {/* <TabsComponent /> */}
+      <TabsComponent />
       {/* <MainContainer/> */}
       {/* <MenuContainer /> */}
     </div>

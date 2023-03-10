@@ -113,6 +113,7 @@ export default function Products({ color }) {
                 Research Products
               </a>
             </li>
+            
           </ul>
           <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded">
             <div className="px-4 py-5 flex-auto">
@@ -124,9 +125,7 @@ export default function Products({ color }) {
                       : "hidden"
                   }
                   id="link1"
-                >
-                  <MenuContainer />
-                </div>
+                ></div>
 
                 <div
                   className={
@@ -135,9 +134,7 @@ export default function Products({ color }) {
                       : "hidden"
                   }
                   id="link2"
-                >
-                  <TabsComponent />
-                </div>
+                ></div>
               </div>
             </div>
             {/* <div className="w-full">
@@ -151,9 +148,9 @@ export default function Products({ color }) {
         </div>
       </section>
       {/* <Slider/> */}
-      {/* <TabsComponent /> */}
+      <TabsComponent />
       {/* <MainContainer/> */}
-      {/* <MenuContainer /> */}
+      <MenuContainer />
     </div>
   );
 }

@@ -34,7 +34,7 @@ export default function Products({ color }) {
                 href="#link1"
                 role="tablist"
               >
-                Hospital Products
+                Laborotay Equipment
               </a>
             </li>
             <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
@@ -53,7 +53,7 @@ export default function Products({ color }) {
                 href="#link2"
                 role="tablist"
               >
-                Laborotay Products
+                Laborotay Reagents
               </a>
             </li>
             <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
@@ -72,7 +72,7 @@ export default function Products({ color }) {
                 href="#link3"
                 role="tablist"
               >
-                Microscopes
+                Laborotay Reagents
               </a>
             </li>
             <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
@@ -91,7 +91,7 @@ export default function Products({ color }) {
                 href="#link4"
                 role="tablist"
               >
-                Veterenart Products
+                Laborotay Reagents
               </a>
             </li>
             <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
@@ -110,7 +110,7 @@ export default function Products({ color }) {
                 href="#link5"
                 role="tablist"
               >
-                Research Products
+                Laborotay Reagents
               </a>
             </li>
           </ul>
@@ -124,9 +124,7 @@ export default function Products({ color }) {
                       : "hidden"
                   }
                   id="link1"
-                >
-                  <MenuContainer />
-                </div>
+                ></div>
 
                 <div
                   className={
@@ -135,9 +133,7 @@ export default function Products({ color }) {
                       : "hidden"
                   }
                   id="link2"
-                >
-                  <TabsComponent />
-                </div>
+                ></div>
               </div>
             </div>
             {/* <div className="w-full">
@@ -151,9 +147,9 @@ export default function Products({ color }) {
         </div>
       </section>
       {/* <Slider/> */}
-      {/* <TabsComponent /> */}
+      <TabsComponent />
       {/* <MainContainer/> */}
-      {/* <MenuContainer /> */}
+      <MenuContainer />
     </div>
   );
 }

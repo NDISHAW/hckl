@@ -125,7 +125,7 @@ export default function Products({ color }) {
                   }
                   id="link1"
                 >
-                  <MenuContainer />
+
                 </div>
 
                 <div

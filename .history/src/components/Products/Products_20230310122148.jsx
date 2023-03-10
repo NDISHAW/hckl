@@ -5,8 +5,7 @@ import MenuContainer from '../MenuContainer'
 import TabsComponent from './LabComponents/Tabs'
 import './Products.css'
 
-export default function Products({ color }) {
-  const [openTab, setOpenTab] = React.useState(1);
+export default function Products() {
   return (
     <div className="w-screen h-auto flex flex-col bg-primary scrollbar-hide">
       <section className="w-full my-6">
@@ -29,12 +28,13 @@ export default function Products({ color }) {
                 onClick={(e) => {
                   e.preventDefault();
                   setOpenTab(1);
+                  setCategory(labEquipment);
                 }}
                 data-toggle="tab"
                 href="#link1"
                 role="tablist"
               >
-                Hospital Products
+                Laborotay Equipment
               </a>
             </li>
             <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
@@ -48,69 +48,13 @@ export default function Products({ color }) {
                 onClick={(e) => {
                   e.preventDefault();
                   setOpenTab(2);
+                  setCategory(labReagents);
                 }}
                 data-toggle="tab"
                 href="#link2"
                 role="tablist"
               >
-                Laborotay Products
-              </a>
-            </li>
-            <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
-              <a
-                className={
-                  "text-lg font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
-                  (openTab === 3
-                    ? "text-white bg-blue-400"
-                    : "text-" + color + "-600 bg-white")
-                }
-                onClick={(e) => {
-                  e.preventDefault();
-                  setOpenTab(3);
-                }}
-                data-toggle="tab"
-                href="#link3"
-                role="tablist"
-              >
-                Microscopes
-              </a>
-            </li>
-            <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
-              <a
-                className={
-                  "text-lg font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
-                  (openTab === 4
-                    ? "text-white bg-blue-400"
-                    : "text-" + color + "-600 bg-white")
-                }
-                onClick={(e) => {
-                  e.preventDefault();
-                  setOpenTab(4);
-                }}
-                data-toggle="tab"
-                href="#link4"
-                role="tablist"
-              >
-                Veterenart Products
-              </a>
-            </li>
-            <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
-              <a
-                className={
-                  "text-lg font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
-                  (openTab === 5
-                    ? "text-white bg-blue-400"
-                    : "text-" + color + "-600 bg-white")
-                }
-                onClick={(e) => {
-                  e.preventDefault();
-                  setOpenTab(5);
-                }}
-                data-toggle="tab"
-                href="#link5"
-                role="tablist"
-              >
-                Research Products
+                Laborotay Reagents
               </a>
             </li>
           </ul>
@@ -125,7 +69,45 @@ export default function Products({ color }) {
                   }
                   id="link1"
                 >
-                  <MenuContainer />
+                  {labEquipment &&
+                    labEquipment.map((category) => (
+                      <motion.div
+                        whileTap={{ scale: 0.75 }}
+                        key={category.id}
+                        className={`group ${
+                          filter === category.urlParamName
+                            ? "bg-blue-400 "
+                            : "bg-card"
+                        } w-44 min-w-[94px] h-28 cursor-pointer rounded-lg drop-shadow-xl flex flex-col gap-3 items-center justify-center hover:bg-blue-900 `}
+                        onClick={() => setFilter(category.urlParamName)}
+                      >
+                        <div
+                          className={`w-10 h-10 rounded-full shadow-lg ${
+                            filter === category.urlParamName
+                              ? "bg-white"
+                              : "bg-Main"
+                          } group-hover:bg-white flex items-center justify-center`}
+                        >
+                          <Icon
+                            icon="medical-icon:hospital"
+                            className={`${
+                              filter === category.urlParamName
+                                ? "text-textColor"
+                                : "text-white"
+                            } group-hover:text-textColor text-lg`}
+                          />
+                        </div>
+                        <p
+                          className={`font-semibold text-base ${
+                            filter === category.urlParamName
+                              ? "text-white"
+                              : "text-textColor"
+                          } group-hover:text-white`}
+                        >
+                          {category.urlParamName}
+                        </p>
+                      </motion.div>
+                    ))}
                 </div>
 
                 <div
@@ -136,7 +118,7 @@ export default function Products({ color }) {
                   }
                   id="link2"
                 >
-                  <TabsComponent />
+                  
                 </div>
               </div>
             </div>
@@ -151,9 +133,9 @@ export default function Products({ color }) {
         </div>
       </section>
       {/* <Slider/> */}
-      {/* <TabsComponent /> */}
+      <TabsComponent />
       {/* <MainContainer/> */}
-      {/* <MenuContainer /> */}
+      <MenuContainer />
     </div>
   );
 }

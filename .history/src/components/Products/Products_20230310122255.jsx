@@ -29,12 +29,13 @@ export default function Products({ color }) {
                 onClick={(e) => {
                   e.preventDefault();
                   setOpenTab(1);
+                  setCategory(labEquipment);
                 }}
                 data-toggle="tab"
                 href="#link1"
                 role="tablist"
               >
-                Hospital Products
+                Laborotay Equipment
               </a>
             </li>
             <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
@@ -48,69 +49,13 @@ export default function Products({ color }) {
                 onClick={(e) => {
                   e.preventDefault();
                   setOpenTab(2);
+                  setCategory(labReagents);
                 }}
                 data-toggle="tab"
                 href="#link2"
                 role="tablist"
               >
-                Laborotay Products
-              </a>
-            </li>
-            <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
-              <a
-                className={
-                  "text-lg font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
-                  (openTab === 3
-                    ? "text-white bg-blue-400"
-                    : "text-" + color + "-600 bg-white")
-                }
-                onClick={(e) => {
-                  e.preventDefault();
-                  setOpenTab(3);
-                }}
-                data-toggle="tab"
-                href="#link3"
-                role="tablist"
-              >
-                Microscopes
-              </a>
-            </li>
-            <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
-              <a
-                className={
-                  "text-lg font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
-                  (openTab === 4
-                    ? "text-white bg-blue-400"
-                    : "text-" + color + "-600 bg-white")
-                }
-                onClick={(e) => {
-                  e.preventDefault();
-                  setOpenTab(4);
-                }}
-                data-toggle="tab"
-                href="#link4"
-                role="tablist"
-              >
-                Veterenart Products
-              </a>
-            </li>
-            <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
-              <a
-                className={
-                  "text-lg font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
-                  (openTab === 5
-                    ? "text-white bg-blue-400"
-                    : "text-" + color + "-600 bg-white")
-                }
-                onClick={(e) => {
-                  e.preventDefault();
-                  setOpenTab(5);
-                }}
-                data-toggle="tab"
-                href="#link5"
-                role="tablist"
-              >
-                Research Products
+                Laborotay Reagents
               </a>
             </li>
           </ul>
@@ -124,9 +69,7 @@ export default function Products({ color }) {
                       : "hidden"
                   }
                   id="link1"
-                >
-                  <MenuContainer />
-                </div>
+                ></div>
 
                 <div
                   className={
@@ -135,9 +78,7 @@ export default function Products({ color }) {
                       : "hidden"
                   }
                   id="link2"
-                >
-                  <TabsComponent />
-                </div>
+                ></div>
               </div>
             </div>
             {/* <div className="w-full">
@@ -151,9 +92,9 @@ export default function Products({ color }) {
         </div>
       </section>
       {/* <Slider/> */}
-      {/* <TabsComponent /> */}
+      <TabsComponent />
       {/* <MainContainer/> */}
-      {/* <MenuContainer /> */}
+      <MenuContainer />
     </div>
   );
 }

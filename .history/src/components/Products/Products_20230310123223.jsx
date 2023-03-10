@@ -124,9 +124,7 @@ export default function Products({ color }) {
                       : "hidden"
                   }
                   id="link1"
-                >
-                  <MenuContainer />
-                </div>
+                ></div>
 
                 <div
                   className={
@@ -151,9 +149,9 @@ export default function Products({ color }) {
         </div>
       </section>
       {/* <Slider/> */}
-      {/* <TabsComponent /> */}
+      <TabsComponent />
       {/* <MainContainer/> */}
-      {/* <MenuContainer /> */}
+      <MenuContainer />
     </div>
   );
 }
