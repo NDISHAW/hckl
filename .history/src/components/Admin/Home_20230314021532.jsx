@@ -1,0 +1,12 @@
+import React from 'react'
+import Products from '../Products/Products'
+import Layout from './components/Layout'
+import App from './Table/App'
+
+// export default function Home() {
+//   return (<Layout children={<App/>}/>  )
+// }
+
+export default function Home() {
+  return (<App   )
+}
