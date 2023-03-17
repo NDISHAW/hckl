@@ -2,12 +2,12 @@ export const PRODUCTS = [
   { name: "Laborotary Products", link: "#" },
   { name: "Hospital Products", link: "#" },
   { name: "Microscopes", link: "#" },
-  { name: "Vetenary Products", link: "#" },
+  { name: "Vete", link: "#" },
 ];
 export const RESOURCES = [
-  { name: "Sigma", link: "#" },
-  { name: "Euro-Immune", link: "#" },
-  { name: "Woodley", link: "#" },
+  { name: "Industries and tools", link: "#" },
+  { name: "Use cases", link: "#" },
+  { name: "Blog", link: "#" },
   { name: "Online evenet", link: "#" },
   { name: "Nostrud exercitation", link: "#" },
 ];

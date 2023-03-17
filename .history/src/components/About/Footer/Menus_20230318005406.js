@@ -7,7 +7,7 @@ export const PRODUCTS = [
 export const RESOURCES = [
   { name: "Sigma", link: "#" },
   { name: "Euro-Immune", link: "#" },
-  { name: "Woodley", link: "#" },
+  { name: "Blog", link: "#" },
   { name: "Online evenet", link: "#" },
   { name: "Nostrud exercitation", link: "#" },
 ];
