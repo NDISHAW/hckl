@@ -257,7 +257,7 @@ const saveDetails = () => {
     //   },
     // },
     {
-      Header: "Spec",
+      Header: "",
       accessor: "calories",
       Cell: EditableCell,
     },
