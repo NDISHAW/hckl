@@ -14,7 +14,7 @@
   flex-direction: column;
 }
 
-/* .taskManager__container > button {
+.taskManager__container > button {
   border-radius: 5px;
   border: none;
   color: white;
@@ -31,7 +31,7 @@
 
 .taskManager__container > button:active{
   background-color: hsl(210, 12%, 15%);
-} */
+}
 
 .taskManager__tasks{
   display: flex;

@@ -1,0 +1,118 @@
+import './task.css'
+import {useState} from 'react'
+import TaskItem from './TaskItem'
+import EditTask from './EditTask'
+import { doc, updateDoc, deleteDoc} from "firebase/firestore";
+import { firestore } from "../../firebase.config";
+// import { useStateValue } from "../../context/StateProvider";
+import { motion } from "framer-motion";
+
+function Task({id, imageURL, title, calories, price, completed,description }) {
+  // const [{ foodItems }, dispatch] = useStateValue();
+
+  const [checked, setChecked] = useState(completed);
+  const [open, setOpen] = useState({ edit: false, view: false });
+
+  const handleClose = () => {
+    setOpen({ edit: false, view: false });
+  };
+
+  /* function to update firestore */
+  const handleChange = async () => {
+    const taskDocRef = doc(firestore, "foodItems", id);
+    console.log(taskDocRef);
+    try {
+      await updateDoc(taskDocRef, {
+        completed: checked,
+      });
+    } catch (err) {
+      alert(err);
+    }
+  };
+
+  /* function to delete a document from firstore */
+  const handleDelete = async () => {
+    const taskDocRef = doc(firestore, "foodItems", id);
+    try {
+      await deleteDoc(taskDocRef);
+    } catch (err) {
+      alert(err);
+    }
+  };
+
+  return (
+    <>
+      <div class="grid grid-cols-4 gap-4">
+        <div>
+          <motion.div
+            className="w-40 h-100 -mt-8 drop-shadow-2xl"
+            whileHover={{ scale: 1.8 }}
+          >
+            <img
+              src={imageURL}
+              alt=""
+              className="w-full h-full object-contain"
+              // onClick={() => openModal(item)}
+              variant="gradient"
+            />
+          </motion.div>
+        </div>
+        <div>
+          {" "}
+          <p className="text-textColor font-semibold text-base md:text-lg">
+            {title}
+          </p>
+        </div>
+        <div>
+          <textarea name="description" edit="false" id="" cols="30" rows="10">
+            {description}
+          </textarea>
+          <p className="mt-1 text-sm text-textColor">{calories}</p>
+        </div>
+        <div></div>
+        <div>
+          <p className="text-lg text-headingColor font-semibold">
+            <span className="text-xl text-blue-500">ksh</span> {price}
+          </p>
+        </div>
+        <div>
+          <button
+            className="task__editButton"
+            onClick={() => setOpen({ ...open, edit: true })}
+          >
+            Edit
+          </button>
+        </div>
+        <div>
+          <button className="task__deleteButton" onClick={handleDelete}>
+            Delete
+          </button>
+        </div>
+        <div>
+          <button onClick={() => setOpen({ ...open, view: true })}>View</button>
+        </div>
+      </div>
+      {open.view && (
+        <TaskItem
+          onClose={handleClose}
+          title={calories}
+          description={description}
+          open={open.view}
+        />
+      )}
+
+      {open.edit && (
+        <EditTask
+          onClose={handleClose}
+          toEditTitle={calories}
+          toEditDescription={description}
+          open={open.edit}
+          id={id}
+        />
+      )}
+      
+    </>
+  );
+}
+
+export default Task

@@ -72,19 +72,29 @@ function Task({id, imageURL, title, calories, price, completed,description }) {
         </textarea>
         <p className="mt-1 text-sm text-textColor">{calories}</p>
       </div>
-      <div className='flex-cols'>
+      <div></div>
+      <div>
+        <p className="text-lg text-headingColor font-semibold">
+          <span className="text-xl text-blue-500">ksh</span> {price}
+        </p>
+      </div>
+      <div>
         <button
-          className="bg-gradient-to-br bg-blue-300 hover:bg-blue-900 w-full md:w-auto px-4 py-2  rounded-lg hover:shadow-lg transition-all ease-in-out duration-100"
+          className="task__editButton"
           onClick={() => setOpen({ ...open, edit: true })}
         >
           Edit
         </button>
+      </div>
+      <div>
         <button
-          className="bg-gradient-to-br bg-red-300 hover:bg-red-600 w-full md:w-auto px-4 py-2  rounded-lg hover:shadow-lg transition-all ease-in-out duration-100"
+          className="bg-gradient-to-br bg-blue-300 hover:bg-blue-900 w-full md:w-auto px-4 py-2  rounded-lg hover:shadow-lg transition-all ease-in-out duration-100"
           onClick={handleDelete}
         >
           Delete
         </button>
+      </div>
+      <div>
         <button
           className="bg-gradient-to-br bg-blue-300 hover:bg-blue-900 w-full md:w-auto px-4 py-2  rounded-lg hover:shadow-lg transition-all ease-in-out duration-100"
           onClick={() => setOpen({ ...open, view: true })}
@@ -92,14 +102,6 @@ function Task({id, imageURL, title, calories, price, completed,description }) {
           View
         </button>
       </div>
-      <div>
-        <p className="text-lg text-headingColor font-semibold">
-          <span className="text-xl text-blue-500">ksh</span> {price}
-        </p>
-      </div>
-      <div></div>
-      <div></div>
-      <div></div>
 
       {open.view && (
         <TaskItem

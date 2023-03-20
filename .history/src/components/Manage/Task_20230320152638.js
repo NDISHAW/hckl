@@ -74,13 +74,13 @@ function Task({id, imageURL, title, calories, price, completed,description }) {
       </div>
       <div className='flex-cols'>
         <button
-          className="bg-gradient-to-br bg-blue-300 hover:bg-blue-900 w-full md:w-auto px-4 py-2  rounded-lg hover:shadow-lg transition-all ease-in-out duration-100"
+          className="bg-gradient-to-br bg-red-300 hover:bg-blue-900 w-full md:w-auto px-4 py-2  rounded-lg hover:shadow-lg transition-all ease-in-out duration-100"
           onClick={() => setOpen({ ...open, edit: true })}
         >
           Edit
         </button>
         <button
-          className="bg-gradient-to-br bg-red-300 hover:bg-red-600 w-full md:w-auto px-4 py-2  rounded-lg hover:shadow-lg transition-all ease-in-out duration-100"
+          className="bg-gradient-to-br bg-blue-300 hover:bg-red-900 w-full md:w-auto px-4 py-2  rounded-lg hover:shadow-lg transition-all ease-in-out duration-100"
           onClick={handleDelete}
         >
           Delete

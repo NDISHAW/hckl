@@ -38,7 +38,7 @@ function TaskManager() {
           className="bg-gradient-to-br bg-blue-300 hover:bg-blue-900 w-flex md:w-auto px-4 py-2  rounded-lg hover:shadow-lg transition-all ease-in-out duration-100"
           onClick={() => setOpenAddModal(true)}
         >
-          <header className='text-textColor font-bold '>Add Product + </header>
+          <header className='text-textColor font-bold'>Add Product + </header>
         </button>
         <div className="grid">
           {tasks && tasks.length > 0 ? (
