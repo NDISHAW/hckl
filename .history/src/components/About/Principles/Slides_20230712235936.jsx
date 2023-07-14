@@ -24,7 +24,7 @@ export default function Slides() {
   const options = {
     loop: true,
     margin: 2,
-    nav: true,
+    // nav: true,
     animateIn: "bounceInRight",
     animateOut: "bounceOutRight",
     dots: true,
@@ -50,7 +50,7 @@ export default function Slides() {
       </p>
       <motion.div className="slide-section w-full flex items-center justify-between ">
         <div className="car grid grid-cols-1 md:grid-cols-1 gap-2 w-full bg-transparent md:mb-10">
-          <motion.div className="flex h-auto">
+          <motion.div className="flex h-flex">
             <OwlCarousel
               className="owl-carousel"
               id="testimonial-carousel"
@@ -61,29 +61,23 @@ export default function Slides() {
                   <div className="client-info">
                     <img src={atron} alt="no internet connection"></img>
                   </div>
-                  <motion.p
-                    whileTap={{ scale: 0.75 }}
-                    className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
-                  >
+                  <div>
                     Our Mission is to build long-term relationships with our
                     customers and provide exceptional customer service by
                     pursuing business through innovation.
-                  </motion.p>
+                  </div>
                 </div>
               </div>
 
               <div className="col-lg-12">
                 <div className="testi-item">
-                  <motion.p
-                    whileTap={{ scale: 0.75 }}
-                    className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
-                  >
+                  <div className="client-info">
+                    <img src={blueline} alt="no internet connection"></img>
+                  </div>
+                  <div>
                     Our Mission is to build long-term relationships with our
                     customers and provide exceptional customer service by
                     pursuing business through innovation.
-                  </motion.p>
-                  <div className="client-info">
-                    <img src={blueline} alt="no internet connection"></img>
                   </div>
                 </div>
               </div>
@@ -117,6 +111,9 @@ export default function Slides() {
               </div>
               <div className="col-lg-12">
                 <div className="testi-item">
+                  <div className="client-info">
+                    <img src={euroimmum2} alt="no internet connection"></img>
+                  </div>
                   <motion.p
                     whileTap={{ scale: 0.75 }}
                     className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
@@ -138,16 +135,10 @@ export default function Slides() {
                     the leading manufacturers of medical laboratory diagnostic
                     products.
                   </motion.p>
-                  <div className="client-info">
-                    <img src={euroimmum2} alt="no internet connection"></img>
-                  </div>
                 </div>
               </div>
               <div className="col-lg-12">
                 <div className="testi-item">
-                  <div className="client-info">
-                    <img src={euromex} alt="no internet connection"></img>
-                  </div>
                   <motion.p
                     whileTap={{ scale: 0.75 }}
                     className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
@@ -169,17 +160,20 @@ export default function Slides() {
                     of optical instruments and high level optical and opto-
                     mechanical components.
                   </motion.p>
+                  <div className="client-info">
+                    <img src={euromex} alt="no internet connection"></img>
+                  </div>
                 </div>
               </div>
               <div className="col-lg-12">
                 <div className="testi-item">
-                  <motion.p>
+                  <div className="client-info">
+                    <img src={evermed} alt="no internet connection"></img>
+                  </div>
+                  <div>
                     Our Mission is to build long-term relationships with our
                     customers and provide exceptional customer service by
                     pursuing business through innovation.
-                  </motion.p>
-                  <div className="client-info">
-                    <img src={evermed} alt="no internet connection"></img>
                   </div>
                 </div>
               </div>
@@ -188,14 +182,6 @@ export default function Slides() {
                   <div className="client-info">
                     <img src={fresenius} alt="no internet connection"></img>
                   </div>
-                  <motion.p
-                    whileTap={{ scale: 0.75 }}
-                    className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
-                  >
-                    Our Mission is to build long-term relationships with our
-                    customers and provide exceptional customer service by
-                    pursuing business through innovation.
-                  </motion.p>
                 </div>
               </div>
               <div className="col-lg-12">
@@ -219,6 +205,9 @@ export default function Slides() {
               </div>
               <div className="col-lg-12">
                 <div className="testi-item">
+                  <div className="client-info">
+                    <img src={PROHS} alt="no internet connection"></img>
+                  </div>
                   <motion.p
                     whileTap={{ scale: 0.75 }}
                     className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
@@ -235,9 +224,6 @@ export default function Slides() {
                     developing a solution adapted to the sterilization and
                     disinfection needs of each project.
                   </motion.p>
-                  <div className="client-info">
-                    <img src={PROHS} alt="no internet connection"></img>
-                  </div>
                 </div>
               </div>
               <div className="col-lg-12">
@@ -257,6 +243,9 @@ export default function Slides() {
               </div>
               <div className="col-lg-12">
                 <div className="testi-item">
+                  <div className="client-info">
+                    <img src={SHELDON} alt="no internet connection"></img>
+                  </div>
                   <motion.p
                     whileTap={{ scale: 0.75 }}
                     className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
@@ -269,9 +258,6 @@ export default function Slides() {
                     science, pharmaceutical, biomedical, environmental and
                     industrial markets
                   </motion.p>
-                  <div className="client-info">
-                    <img src={SHELDON} alt="no internet connection"></img>
-                  </div>
                 </div>
               </div>
               <div className="col-lg-12">
@@ -294,6 +280,9 @@ export default function Slides() {
               </div>
               <div className="col-lg-12">
                 <div className="testi-item">
+                  <div className="client-info">
+                    <img src={WOODLEY} alt="no internet connection"></img>
+                  </div>
                   <motion.p
                     whileTap={{ scale: 0.75 }}
                     className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
@@ -312,9 +301,6 @@ export default function Slides() {
                     recognizing the quality of our administrative and management
                     systems.
                   </motion.p>
-                  <div className="client-info">
-                    <img src={WOODLEY} alt="no internet connection"></img>
-                  </div>
                 </div>
               </div>
             </OwlCarousel>

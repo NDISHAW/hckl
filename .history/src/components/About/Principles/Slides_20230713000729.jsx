@@ -24,7 +24,7 @@ export default function Slides() {
   const options = {
     loop: true,
     margin: 2,
-    nav: true,
+    // nav: true,
     animateIn: "bounceInRight",
     animateOut: "bounceOutRight",
     dots: true,
@@ -188,6 +188,25 @@ export default function Slides() {
                   <div className="client-info">
                     <img src={fresenius} alt="no internet connection"></img>
                   </div>
+                </div>
+              </div>
+              <div className="col-lg-12">
+                <div className="testi-item">
+                  <motion.p
+                    whileTap={{ scale: 0.75 }}
+                    className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
+                  >
+                    Lmb Technologie GmbH installed the first device for
+                    separation of whole blood and closed a gap to offer devices
+                    for the entire process of blood production, from the
+                    donation to the distribution. Today Lmb’s range of products
+                    comprises devices for the donation of blood, filtration,
+                    separation, irradiation, storage and transport to offer a
+                    global solution.
+                  </motion.p>
+                  <div className="client-info">
+                    <img src={lmb} alt="no internet connection"></img>
+                  </div>
                   <motion.p
                     whileTap={{ scale: 0.75 }}
                     className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
@@ -201,24 +220,8 @@ export default function Slides() {
               <div className="col-lg-12">
                 <div className="testi-item">
                   <div className="client-info">
-                    <img src={lmb} alt="no internet connection"></img>
+                    <img src={PROHS} alt="no internet connection"></img>
                   </div>
-                  <motion.p
-                    whileTap={{ scale: 0.75 }}
-                    className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
-                  >
-                    Lmb Technologie GmbH installed the first device for
-                    separation of whole blood and closed a gap to offer devices
-                    for the entire process of blood production, from the
-                    donation to the distribution. Today Lmb’s range of products
-                    comprises devices for the donation of blood, filtration,
-                    separation, irradiation, storage and transport to offer a
-                    global solution.
-                  </motion.p>
-                </div>
-              </div>
-              <div className="col-lg-12">
-                <div className="testi-item">
                   <motion.p
                     whileTap={{ scale: 0.75 }}
                     className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
@@ -235,9 +238,6 @@ export default function Slides() {
                     developing a solution adapted to the sterilization and
                     disinfection needs of each project.
                   </motion.p>
-                  <div className="client-info">
-                    <img src={PROHS} alt="no internet connection"></img>
-                  </div>
                 </div>
               </div>
               <div className="col-lg-12">
@@ -257,6 +257,9 @@ export default function Slides() {
               </div>
               <div className="col-lg-12">
                 <div className="testi-item">
+                  <div className="client-info">
+                    <img src={SHELDON} alt="no internet connection"></img>
+                  </div>
                   <motion.p
                     whileTap={{ scale: 0.75 }}
                     className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
@@ -269,9 +272,6 @@ export default function Slides() {
                     science, pharmaceutical, biomedical, environmental and
                     industrial markets
                   </motion.p>
-                  <div className="client-info">
-                    <img src={SHELDON} alt="no internet connection"></img>
-                  </div>
                 </div>
               </div>
               <div className="col-lg-12">
@@ -294,6 +294,9 @@ export default function Slides() {
               </div>
               <div className="col-lg-12">
                 <div className="testi-item">
+                  <div className="client-info">
+                    <img src={WOODLEY} alt="no internet connection"></img>
+                  </div>
                   <motion.p
                     whileTap={{ scale: 0.75 }}
                     className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
@@ -312,9 +315,6 @@ export default function Slides() {
                     recognizing the quality of our administrative and management
                     systems.
                   </motion.p>
-                  <div className="client-info">
-                    <img src={WOODLEY} alt="no internet connection"></img>
-                  </div>
                 </div>
               </div>
             </OwlCarousel>

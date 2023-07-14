@@ -24,7 +24,7 @@ export default function Slides() {
   const options = {
     loop: true,
     margin: 2,
-    nav: true,
+    // nav: true,
     animateIn: "bounceInRight",
     animateOut: "bounceOutRight",
     dots: true,

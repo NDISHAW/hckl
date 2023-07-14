@@ -24,7 +24,7 @@ export default function Slides() {
   const options = {
     loop: true,
     margin: 2,
-    nav: true,
+    // nav: true,
     animateIn: "bounceInRight",
     animateOut: "bounceOutRight",
     dots: true,
@@ -200,6 +200,7 @@ export default function Slides() {
               </div>
               <div className="col-lg-12">
                 <div className="testi-item">
+                  
                   <div className="client-info">
                     <img src={lmb} alt="no internet connection"></img>
                   </div>

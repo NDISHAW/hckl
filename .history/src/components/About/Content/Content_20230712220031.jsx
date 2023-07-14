@@ -97,8 +97,8 @@ const Content = (flag) => {
           <p>
             {" "}
             Hospital Consumables Kenya Limited is a wholly Kenyan company. The
-            directors bring in many years of experience in the Health care
-            sector having been involved in:
+            directors bring in many years of experience in the Health
+            care sector having been involved in:
           </p>
         </div>
         <div className="flex flex-wrap">
@@ -122,9 +122,7 @@ const Content = (flag) => {
               </IconWrap>
               <BoxTitle>Maintenance</BoxTitle>
               <Text>
-                We offer maintenance services for the supplied equipment. No
-                equipment is soo well designed and manufactured that it will
-                NEVER fail !
+                We offer maintenance services for the supplied equipment
               </Text>
             </Box>
           </div>
@@ -136,13 +134,11 @@ const Content = (flag) => {
               <BoxTitle>Technical support</BoxTitle>
               <Text>
                 We offer Technical support in design and specification of sites
-                and equipment for various customers. We pay special emphasis on
-                getting principals who are ready to offer us back up in cases of
-                equipment failure.
+                and equipment for various customers
               </Text>
             </Box>
           </div>
-          <div className="w-275 h-[475px] min-w-[275px] md:w-300 md:min-w-[300px]  bg-cardOverlay rounded-lg py-2 px-4  my-12 backdrop-blur-lg hover:drop-shadow-lg flex flex-col items-center justify-evenly relative">
+          <div className="w-275 h-[575px] min-w-[275px] md:w-300 md:min-w-[300px]  bg-cardOverlay rounded-lg py-2 px-4  my-12 backdrop-blur-lg hover:drop-shadow-lg flex flex-col items-center justify-evenly relative">
             <Box>
               <IconWrap>
                 <Demo />
@@ -152,12 +148,16 @@ const Content = (flag) => {
               <BoxTitle>Motivation</BoxTitle>
               <Text>
                 Our motivation is to provide quality products at affordable
-                prices in the Kenyan market and East Africa as a whole.It is this commitment that we extend to our
+                prices in the Kenyan market and East Africa as a whole. No
+                equipment is soo well designed and manufactured that it will
+                NEVER fail, for this reason we pay special emphasis on getting
+                principals who are ready to offer us back up in cases of
+                equipment failure. It is this commitment that we extend to our
                 customers
               </Text>
             </Box>
           </div>
-          <div className="w-275 h-[475px] min-w-[275px] md:w-300 md:min-w-[300px]  bg-cardOverlay rounded-lg py-2 px-4  my-12 backdrop-blur-lg hover:drop-shadow-lg flex flex-col items-center justify-evenly relative">
+          <div className="w-275 h-[575px] min-w-[275px] md:w-300 md:min-w-[300px]  bg-cardOverlay rounded-lg py-2 px-4  my-12 backdrop-blur-lg hover:drop-shadow-lg flex flex-col items-center justify-evenly relative">
             <Box>
               <IconWrap>
                 <Demo />
@@ -166,13 +166,11 @@ const Content = (flag) => {
               </IconWrap>
               <BoxTitle>Mission</BoxTitle>
               <Text>
-                Our Mission is to build long-term relationships with our
-                customers and provide exceptional customer service by pursuing
-                business through innovation.
+                Our Mission is to build long-term relationships with our customers and provide exceptional customer service by pursuing business through innovation.
               </Text>
             </Box>
           </div>
-          <div className="w-275 h-[475px] min-w-[275px] md:w-300 md:min-w-[300px]  bg-cardOverlay rounded-lg py-2 px-4  my-12 backdrop-blur-lg hover:drop-shadow-lg flex flex-col items-center justify-evenly relative">
+          <div className="w-275 h-[575px] min-w-[275px] md:w-300 md:min-w-[300px]  bg-cardOverlay rounded-lg py-2 px-4  my-12 backdrop-blur-lg hover:drop-shadow-lg flex flex-col items-center justify-evenly relative">
             <Box>
               <IconWrap>
                 <Demo />
@@ -181,8 +179,7 @@ const Content = (flag) => {
               </IconWrap>
               <BoxTitle>Values</BoxTitle>
               <Text>
-                Respect, Creativity, Honesty, Loyality and Moral Business
-                Ethics.
+                Respect, Creativity, Honesty
               </Text>
             </Box>
           </div>

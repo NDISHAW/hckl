@@ -24,7 +24,7 @@ export default function Slides() {
   const options = {
     loop: true,
     margin: 2,
-    nav: true,
+    // nav: true,
     animateIn: "bounceInRight",
     animateOut: "bounceOutRight",
     dots: true,
@@ -192,17 +192,24 @@ export default function Slides() {
                     whileTap={{ scale: 0.75 }}
                     className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
                   >
-                    Our Mission is to build long-term relationships with our
-                    customers and provide exceptional customer service by
-                    pursuing business through innovation.
+                    With a heritage stretching back almost 30 years, Woodley
+                    Equipment is a world leading, one- stop supplier of
+                    equipment solutions to the Clinical Trials Industry. As a
+                    private company, Woodley was established in October 1989 and
+                    now operates from three offices and warehouse premises in
+                    the North West of England and office and warehouse premises
+                    in New York, USA. Developing a network of suppliers and
+                    service providers around the globe, Woodley has successfully
+                    grown, establishing a reputation for consistently providing
+                    quality, reliable equipment services. This is reflected in
+                    the achievement of an ISO 9001:2015 accreditation
+                    recognizing the quality of our administrative and management
+                    systems.
                   </motion.p>
                 </div>
               </div>
               <div className="col-lg-12">
                 <div className="testi-item">
-                  <div className="client-info">
-                    <img src={lmb} alt="no internet connection"></img>
-                  </div>
                   <motion.p
                     whileTap={{ scale: 0.75 }}
                     className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
@@ -214,6 +221,17 @@ export default function Slides() {
                     comprises devices for the donation of blood, filtration,
                     separation, irradiation, storage and transport to offer a
                     global solution.
+                  </motion.p>
+                  <div className="client-info">
+                    <img src={lmb} alt="no internet connection"></img>
+                  </div>
+                  <motion.p
+                    whileTap={{ scale: 0.75 }}
+                    className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
+                  >
+                    Our Mission is to build long-term relationships with our
+                    customers and provide exceptional customer service by
+                    pursuing business through innovation.
                   </motion.p>
                 </div>
               </div>

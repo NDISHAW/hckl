@@ -142,7 +142,7 @@ const Content = (flag) => {
               </Text>
             </Box>
           </div>
-          <div className="w-275 h-[475px] min-w-[275px] md:w-300 md:min-w-[300px]  bg-cardOverlay rounded-lg py-2 px-4  my-12 backdrop-blur-lg hover:drop-shadow-lg flex flex-col items-center justify-evenly relative">
+          <div className="w-275 h-[575px] min-w-[275px] md:w-300 md:min-w-[300px]  bg-cardOverlay rounded-lg py-2 px-4  my-12 backdrop-blur-lg hover:drop-shadow-lg flex flex-col items-center justify-evenly relative">
             <Box>
               <IconWrap>
                 <Demo />
@@ -152,12 +152,12 @@ const Content = (flag) => {
               <BoxTitle>Motivation</BoxTitle>
               <Text>
                 Our motivation is to provide quality products at affordable
-                prices in the Kenyan market and East Africa as a whole.It is this commitment that we extend to our
+                prices in the Kenyan market and East Africa as a whole. It is this commitment that we extend to our
                 customers
               </Text>
             </Box>
           </div>
-          <div className="w-275 h-[475px] min-w-[275px] md:w-300 md:min-w-[300px]  bg-cardOverlay rounded-lg py-2 px-4  my-12 backdrop-blur-lg hover:drop-shadow-lg flex flex-col items-center justify-evenly relative">
+          <div className="w-275 h-[575px] min-w-[275px] md:w-300 md:min-w-[300px]  bg-cardOverlay rounded-lg py-2 px-4  my-12 backdrop-blur-lg hover:drop-shadow-lg flex flex-col items-center justify-evenly relative">
             <Box>
               <IconWrap>
                 <Demo />
@@ -172,7 +172,7 @@ const Content = (flag) => {
               </Text>
             </Box>
           </div>
-          <div className="w-275 h-[475px] min-w-[275px] md:w-300 md:min-w-[300px]  bg-cardOverlay rounded-lg py-2 px-4  my-12 backdrop-blur-lg hover:drop-shadow-lg flex flex-col items-center justify-evenly relative">
+          <div className="w-275 h-[575px] min-w-[275px] md:w-300 md:min-w-[300px]  bg-cardOverlay rounded-lg py-2 px-4  my-12 backdrop-blur-lg hover:drop-shadow-lg flex flex-col items-center justify-evenly relative">
             <Box>
               <IconWrap>
                 <Demo />

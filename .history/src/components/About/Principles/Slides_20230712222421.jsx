@@ -24,7 +24,7 @@ export default function Slides() {
   const options = {
     loop: true,
     margin: 2,
-    nav: true,
+    // nav: true,
     animateIn: "bounceInRight",
     animateOut: "bounceOutRight",
     dots: true,
@@ -44,13 +44,13 @@ export default function Slides() {
   };
 
   return (
-    <div className="w-screen h-flex flex flex-col  scrollbar-hide pb-8 mb-28">
+    <div className="w-screen h-auto flex flex-col  scrollbar-hide pb-8 mb-28">
       <p className="text-4xl justify-center font-bold capitalize text-Main relative before:absolute before:rounded-lg before:content before:w-16 before:h-1 before:-bottom-2 before:left-0 before:bg-gradient-to-tr from-blue-300 to-blue-900 transition-all ease-in-out duration-100 mr-auto ">
         Our Principles
       </p>
       <motion.div className="slide-section w-full flex items-center justify-between ">
         <div className="car grid grid-cols-1 md:grid-cols-1 gap-2 w-full bg-transparent md:mb-10">
-          <motion.div className="flex h-auto">
+          <motion.div className="flex h-flex">
             <OwlCarousel
               className="owl-carousel"
               id="testimonial-carousel"
@@ -61,29 +61,23 @@ export default function Slides() {
                   <div className="client-info">
                     <img src={atron} alt="no internet connection"></img>
                   </div>
-                  <motion.p
-                    whileTap={{ scale: 0.75 }}
-                    className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
-                  >
+                  <div>
                     Our Mission is to build long-term relationships with our
                     customers and provide exceptional customer service by
                     pursuing business through innovation.
-                  </motion.p>
+                  </div>
                 </div>
               </div>
 
               <div className="col-lg-12">
                 <div className="testi-item">
-                  <motion.p
-                    whileTap={{ scale: 0.75 }}
-                    className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
-                  >
+                  <div className="client-info">
+                    <img src={blueline} alt="no internet connection"></img>
+                  </div>
+                  <div>
                     Our Mission is to build long-term relationships with our
                     customers and provide exceptional customer service by
                     pursuing business through innovation.
-                  </motion.p>
-                  <div className="client-info">
-                    <img src={blueline} alt="no internet connection"></img>
                   </div>
                 </div>
               </div>
@@ -102,52 +96,23 @@ export default function Slides() {
                   <motion.p
                     whileTap={{ scale: 0.75 }}
                     className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
-                  >
-                    Drucker Diagnostics is a world leader in the design and
-                    production of centrifuges, dry hematology analzyers,
-                    specimen protection lockboxes, and fluorescence microscopy
-                    products. Founded in 1932, Drucker has become the most
-                    common centrifuge brand in reference labs. Our entire
-                    product line is proudly designed, built, and supported in
-                    the USA. All operations take place in-house at our operating
-                    centers in central Pennsylvania, just outside of State
-                    College, PA.
-                  </motion.p>
+                  ></motion.p>
                 </div>
               </div>
               <div className="col-lg-12">
                 <div className="testi-item">
-                  <motion.p
-                    whileTap={{ scale: 0.75 }}
-                    className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
-                  >
-                    EUROIMMUN has extensive expertise in the fields of
-                    immunology, cell biology, histology, biochemistry and
-                    molecular biology. It produces test systems for the
-                    laboratory diagnosis of autoimmune and infectious diseases,
-                    allergies, and for gene analyses. In the foreground are test
-                    systems for the determination of antibodies, but also of
-                    antigens and genetic markers in patient samples. They are
-                    based on both immunohisto-chemical and biochemical methods,
-                    such as indirect immunofluorescence, microtiter ELISAs and
-                    different blot techniques (Westernblot, EUROASSAY, EUROLINE,
-                    EUROLINE-WB), and techniques from molecular biology
-                    (microarray). EUROIMMUN bases its production on modern,
-                    state-of-the-art procedures and microanalysis techniques
-                    which partly carry worldwide patents. The company is amongst
-                    the leading manufacturers of medical laboratory diagnostic
-                    products.
-                  </motion.p>
                   <div className="client-info">
                     <img src={euroimmum2} alt="no internet connection"></img>
                   </div>
+                  <div>
+                    Our Mission is to build long-term relationships with our
+                    customers and provide exceptional customer service by
+                    pursuing business through innovation.
+                  </div>
                 </div>
               </div>
               <div className="col-lg-12">
                 <div className="testi-item">
-                  <div className="client-info">
-                    <img src={euromex} alt="no internet connection"></img>
-                  </div>
                   <motion.p
                     whileTap={{ scale: 0.75 }}
                     className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
@@ -169,17 +134,20 @@ export default function Slides() {
                     of optical instruments and high level optical and opto-
                     mechanical components.
                   </motion.p>
+                  <div className="client-info">
+                    <img src={euromex} alt="no internet connection"></img>
+                  </div>
                 </div>
               </div>
               <div className="col-lg-12">
                 <div className="testi-item">
-                  <motion.p>
+                  <div className="client-info">
+                    <img src={evermed} alt="no internet connection"></img>
+                  </div>
+                  <div>
                     Our Mission is to build long-term relationships with our
                     customers and provide exceptional customer service by
                     pursuing business through innovation.
-                  </motion.p>
-                  <div className="client-info">
-                    <img src={evermed} alt="no internet connection"></img>
                   </div>
                 </div>
               </div>
@@ -188,14 +156,6 @@ export default function Slides() {
                   <div className="client-info">
                     <img src={fresenius} alt="no internet connection"></img>
                   </div>
-                  <motion.p
-                    whileTap={{ scale: 0.75 }}
-                    className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
-                  >
-                    Our Mission is to build long-term relationships with our
-                    customers and provide exceptional customer service by
-                    pursuing business through innovation.
-                  </motion.p>
                 </div>
               </div>
               <div className="col-lg-12">
@@ -203,40 +163,22 @@ export default function Slides() {
                   <div className="client-info">
                     <img src={lmb} alt="no internet connection"></img>
                   </div>
-                  <motion.p
-                    whileTap={{ scale: 0.75 }}
-                    className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
-                  >
-                    Lmb Technologie GmbH installed the first device for
-                    separation of whole blood and closed a gap to offer devices
-                    for the entire process of blood production, from the
-                    donation to the distribution. Today Lmb’s range of products
-                    comprises devices for the donation of blood, filtration,
-                    separation, irradiation, storage and transport to offer a
-                    global solution.
-                  </motion.p>
+                  <div>
+                    Our Mission is to build long-term relationships with our
+                    customers and provide exceptional customer service by
+                    pursuing business through innovation.
+                  </div>
                 </div>
               </div>
               <div className="col-lg-12">
                 <div className="testi-item">
-                  <motion.p
-                    whileTap={{ scale: 0.75 }}
-                    className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
-                  >
-                    PROHS is a company dedicated to the development and
-                    manufacture of hospital, laboratory and veterinary
-                    equipment, specialized in the area of disinfection and
-                    sterilization. Covering all the needs of a central
-                    sterilization service (RUMED), PROHS stands out for the
-                    ability to design, manufacture and install sterilization
-                    units adapted to the needs and requirements of each Hospital
-                    or Clinic. In the laboratory area, from an embryonic stage
-                    we accompany and advise the client in the process of
-                    developing a solution adapted to the sterilization and
-                    disinfection needs of each project.
-                  </motion.p>
                   <div className="client-info">
                     <img src={PROHS} alt="no internet connection"></img>
+                  </div>
+                  <div>
+                    Our Mission is to build long-term relationships with our
+                    customers and provide exceptional customer service by
+                    pursuing business through innovation.
                   </div>
                 </div>
               </div>
@@ -244,33 +186,23 @@ export default function Slides() {
                 <div className="testi-item">
                   <div className="client-info">
                     <img src={qbc} alt="no internet connection"></img>
-                    <motion.p
-                      whileTap={{ scale: 0.75 }}
-                      className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
-                    >
+                    <div>
                       Our Mission is to build long-term relationships with our
                       customers and provide exceptional customer service by
                       pursuing business through innovation.
-                    </motion.p>
+                    </div>
                   </div>
                 </div>
               </div>
               <div className="col-lg-12">
                 <div className="testi-item">
-                  <motion.p
-                    whileTap={{ scale: 0.75 }}
-                    className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
-                  >
-                    Sheldon Manufacturing, Inc. is an ISO 9001:2008 certified
-                    manufacturer of high quality and innovative constant
-                    temperature equipment to the global market. Major product
-                    lines include incubators, humidity test chambers, ovens,
-                    water and bead baths, and anaerobic chambers for the life
-                    science, pharmaceutical, biomedical, environmental and
-                    industrial markets
-                  </motion.p>
                   <div className="client-info">
                     <img src={SHELDON} alt="no internet connection"></img>
+                  </div>
+                  <div>
+                    Our Mission is to build long-term relationships with our
+                    customers and provide exceptional customer service by
+                    pursuing business through innovation.
                   </div>
                 </div>
               </div>
@@ -279,21 +211,18 @@ export default function Slides() {
                   <div className="client-info">
                     <img src={SPL} alt="no internet connection"></img>
                   </div>
-                  <motion.p
-                    whileTap={{ scale: 0.75 }}
-                    className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
-                  >
-                    Since established in 1987, we are dedicated to manufacture
-                    high quality plastic lab-ware, consistent to the finest
-                    standards in the industries. With a team of enthusiastic
-                    professionals continuously engaging in research, development
-                    and quality control, our products fully comply with the
-                    international regulatory requirements.
-                  </motion.p>
+                  <div>
+                    Our Mission is to build long-term relationships with our
+                    customers and provide exceptional customer service by
+                    pursuing business through innovation.
+                  </div>
                 </div>
               </div>
               <div className="col-lg-12">
                 <div className="testi-item">
+                  <div className="client-info">
+                    <img src={WOODLEY} alt="no internet connection"></img>
+                  </div>
                   <motion.p
                     whileTap={{ scale: 0.75 }}
                     className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
@@ -312,9 +241,7 @@ export default function Slides() {
                     recognizing the quality of our administrative and management
                     systems.
                   </motion.p>
-                  <div className="client-info">
-                    <img src={WOODLEY} alt="no internet connection"></img>
-                  </div>
+                  
                 </div>
               </div>
             </OwlCarousel>
