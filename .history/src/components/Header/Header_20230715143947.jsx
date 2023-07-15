@@ -274,7 +274,7 @@ const Header = () => {
             <p
               className="py-2 flex items-center gap- cursor-pointer  transition-all duration-100 ease-in-out 
                 hover:text-blue-900 text-textColor text-base"
-              onClick={login}
+              // onClick={login}
             >
               <motion.img
                 whileTap={{ scale: 0.6 }}
@@ -305,6 +305,33 @@ const Header = () => {
                     </p>
                   </Link>
                 )}
+
+                {/* <ul className="flex flex-col ">
+                  <li
+                    className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-100 px-4 py-2"
+                    onClick={() => setIsMenu(false)}
+                  >
+                    Home
+                  </li>
+                  <li
+                    className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-100 px-4 py-2"
+                    onClick={() => setIsMenu(false)}
+                  >
+                    Menu
+                  </li>
+                  <li
+                    className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-100 px-4 py-2"
+                    onClick={() => setIsMenu(false)}
+                  >
+                    About Us
+                  </li>
+                  <li
+                    className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-100 px-4 py-2"
+                    onClick={() => setIsMenu(false)}
+                  >
+                    Service
+                  </li>
+                </ul> */}
                 <motion.ul
                   initial={{ opacity: 0, x: 200 }}
                   animate={{ opacity: 1, x: 0 }}
@@ -327,10 +354,7 @@ const Header = () => {
                       Products
                     </li>
                   </Link>
-                  <li
-                    className="text-lg text-blue-900 hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer mt-4"
-                    onClick={() => setOpenAddModal(true)}
-                  >
+                  <li className="text-lg text-blue-900 hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer mt-4">
                     Contact Us
                   </li>
                 </motion.ul>

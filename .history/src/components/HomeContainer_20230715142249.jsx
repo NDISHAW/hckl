@@ -3,7 +3,6 @@ import hrobg from "../img/hrobg.png";
 import { heroData } from "../utils/data";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { MdDeliveryDining } from "react-icons/md";
 
 const HomeContainer = () => {
   return (
@@ -14,7 +13,18 @@ const HomeContainer = () => {
       // data-aos-duration="3000"
     >
       <div className="py-2 flex-1 flex flex-col items-start justify-center gap-6">
-        <div className="flex items-center gap-2 justify-center bg-Main-100 px-4 py-1 rounded-full bg-transparent">         
+        <div className="flex items-center gap-2 justify-center bg-Main-100 px-4 py-1 rounded-full bg-transparent">
+          {/* <p className="text-base text-blue-400 font-bold text-[3rem] lg:text-[5rem]  ">
+            ABOUT US
+          </p> */}
+          <div className="w-8 h-8 bg-white rounded-full overflow-hidden ">
+            <img
+              src={Deliver}
+              className="w-full h-full object-contain"
+              alt="delivery"
+            />
+          </div>
+
           <p className="text-[2rem] lg:text-[4rem] font-bold tracking-wide text-headingColor">
             Welcome to <br /> Hospital Consumables Kenya Limited
             <span className="text-blue-400 text-[2rem] lg:text-[4rem]">
@@ -45,7 +55,7 @@ const HomeContainer = () => {
           alt="hero-bg"
         />
 
-        <div className="w-full h-full absolute top-0 left-0 bottom-0 flex items-center justify-center lg:px-32  py-4 gap-5 flex-wrap">
+        <div className="w-full h-full absolute top-0 left-0 flex items-center justify-center lg:px-32  py-4 gap-5 flex-wrap">
           {heroData &&
             heroData.map((n) => (
               <div

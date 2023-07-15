@@ -305,6 +305,8 @@ const Header = () => {
                     </p>
                   </Link>
                 )}
+
+               
                 <motion.ul
                   initial={{ opacity: 0, x: 200 }}
                   animate={{ opacity: 1, x: 0 }}
@@ -327,10 +329,7 @@ const Header = () => {
                       Products
                     </li>
                   </Link>
-                  <li
-                    className="text-lg text-blue-900 hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer mt-4"
-                    onClick={() => setOpenAddModal(true)}
-                  >
+                  <li className="text-lg text-blue-900 hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer mt-4">
                     Contact Us
                   </li>
                 </motion.ul>
