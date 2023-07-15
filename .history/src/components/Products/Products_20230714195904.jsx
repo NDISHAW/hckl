@@ -56,7 +56,7 @@ export default function Products({ color }) {
                   setOpenTab(2);
                 }}
                 data-toggle="tab"
-                href="#laboratory"
+                href="#link2"
                 role="tablist"
               >
                 Laboratory Products
@@ -96,7 +96,7 @@ export default function Products({ color }) {
                   setOpenTab(3);
                 }}
                 data-toggle="tab"
-                href="#vet"
+                href="#link4"
                 role="tablist"
               >
                 Veterenart Products

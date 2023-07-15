@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { MdShoppingBasket, MdAdd, MdLogout, MdLogin, MdMenu } from "react-icons/md";
+import { MdShoppingBasket, MdAdd, MdLogout, MdLogin } from "react-icons/md";
 import { motion } from "framer-motion";
 
 import {
@@ -272,20 +272,19 @@ const Header = () => {
         {user ? (
           <div className="relative">
             <p
-              className="py-2 flex items-center gap- cursor-pointer  transition-all duration-100 ease-in-out 
-                hover:text-blue-900 text-textColor text-base"
-              onClick={login}
-            >
-              <motion.img
-                whileTap={{ scale: 0.6 }}
-                src={user ? user.photoURL : Avatar}
-                className="w-10 min-w-[40px] h-10 min-h-[40px] drop-shadow-xl cursor-pointer rounded-full"
-                alt="userprofile"
+                className="px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-red-900 transition-all duration-100 ease-in-out 
+                hover:text-green-300 text-textColor text-base"
                 onClick={login}
-              />
-              Menu
-              <MdMenu />
-            </p>
+              >
+            <motion.img
+              whileTap={{ scale: 0.6 }}
+              src={user ? user.photoURL : Avatar}
+              className="w-10 min-w-[40px] h-10 min-h-[40px] drop-shadow-xl cursor-pointer rounded-full"
+              alt="userprofile"
+              onClick={login}
+            />
+            Log Out
+            <MdLogout /></p>
             {isMenu && (
               <motion.div
                 initial={{ opacity: 0, scale: 0.6 }}

@@ -273,7 +273,7 @@ const Header = () => {
           <div className="relative">
             <p
               className="py-2 flex items-center gap- cursor-pointer  transition-all duration-100 ease-in-out 
-                hover:text-blue-900 text-textColor text-base"
+                hover:text-blue-300 text-textColor text-base"
               onClick={login}
             >
               <motion.img

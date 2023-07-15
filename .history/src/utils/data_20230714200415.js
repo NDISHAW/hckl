@@ -8,7 +8,7 @@ export const heroData = [
     id: 1,
     name: "Hospital Products",
     decp: "All products needed for the hospital enviroment.",
-    Link: "/products#hospital",
+    Link: "#hospital",
     imageSrc: theater,
   },
   {

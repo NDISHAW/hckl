@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { MdShoppingBasket, MdAdd, MdLogout, MdLogin, MdMenu } from "react-icons/md";
+import { MdShoppingBasket, MdAdd, MdLogout, MdLogin } from "react-icons/md";
 import { motion } from "framer-motion";
 
 import {
@@ -170,7 +170,7 @@ const Header = () => {
                   src={user ? user.photoURL : Avatar}
                   // src={Avatar}
                   className="w-10 min-w-[40px] h-10 min-h-[40px] drop-shadow-xl cursor-pointer rounded-full"
-                  alt="user"
+                  alt="userprofile"
                 />
                 Log Out
                 <MdLogout />
@@ -271,21 +271,14 @@ const Header = () => {
         </Link>
         {user ? (
           <div className="relative">
-            <p
-              className="py-2 flex items-center gap- cursor-pointer  transition-all duration-100 ease-in-out 
-                hover:text-blue-900 text-textColor text-base"
-              onClick={login}
-            >
-              <motion.img
-                whileTap={{ scale: 0.6 }}
-                src={user ? user.photoURL : Avatar}
-                className="w-10 min-w-[40px] h-10 min-h-[40px] drop-shadow-xl cursor-pointer rounded-full"
-                alt="userprofile"
-                onClick={login}
-              />
-              Menu
-              <MdMenu />
-            </p>
+            <motion.img
+              whileTap={{ scale: 0.6 }}
+              src={user ? user.photoURL : Avatar}
+              className="w-10 min-w-[40px] h-10 min-h-[40px] drop-shadow-xl cursor-pointer rounded-full"
+              alt="userprofile"
+              onClick={SignIn}
+            />
+
             {isMenu && (
               <motion.div
                 initial={{ opacity: 0, scale: 0.6 }}
@@ -306,7 +299,7 @@ const Header = () => {
                   </Link>
                 )}
 
-                {/* <ul className="flex flex-col ">
+                <ul className="flex flex-col ">
                   <li
                     className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-100 px-4 py-2"
                     onClick={() => setIsMenu(false)}
@@ -331,13 +324,12 @@ const Header = () => {
                   >
                     Service
                   </li>
-                </ul> */}
+                </ul>
                 <motion.ul
                   initial={{ opacity: 0, x: 200 }}
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: 200 }}
-                  className="gap-6 mt-1 m-4 hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-100"
-                  onClick={() => setIsMenu(false)}
+                  className="gap-6 mt-4"
                 >
                   <Link to={"/"} className="flex items-center mt-4">
                     <li className="text-xl text-blue-900 hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer mt-4">

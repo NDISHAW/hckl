@@ -66,7 +66,7 @@ const HomeContainer = () => {
                   className="w-40 h-40 -mt-8 drop-shadow-2xl"
                   whileHover={{ scale: 1.4 }}
                 >
-                  <a href={n.Link}>
+                  <a href={}>
                     <img
                       src={n.imageSrc}
                       className="w-20 lg:w-40 -mt-10 lg:-mt-20 "

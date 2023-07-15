@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { MdShoppingBasket, MdAdd, MdLogout, MdLogin, MdMenu } from "react-icons/md";
+import { MdShoppingBasket, MdAdd, MdLogout, MdLogin } from "react-icons/md";
 import { motion } from "framer-motion";
 
 import {
@@ -170,7 +170,7 @@ const Header = () => {
                   src={user ? user.photoURL : Avatar}
                   // src={Avatar}
                   className="w-10 min-w-[40px] h-10 min-h-[40px] drop-shadow-xl cursor-pointer rounded-full"
-                  alt="user"
+                  alt="userprofile"
                 />
                 Log Out
                 <MdLogout />
@@ -249,6 +249,7 @@ const Header = () => {
       </div>
       {/* mobile */}
 
+      
       <div className="flex items-center justify-between md:hidden w-full h-full ">
         {/* Cart container */}
         <div
@@ -269,141 +270,96 @@ const Header = () => {
           <img src={logo} className="w-40 object-cover" alt="logo" />
           {/* <p className="text-headingColor text-xl font-bold"> City</p> */}
         </Link>
-        {user ? (
-          <div className="relative">
-            <p
-              className="py-2 flex items-center gap- cursor-pointer  transition-all duration-100 ease-in-out 
-                hover:text-blue-900 text-textColor text-base"
-              onClick={login}
-            >
-              <motion.img
-                whileTap={{ scale: 0.6 }}
-                src={user ? user.photoURL : Avatar}
-                className="w-10 min-w-[40px] h-10 min-h-[40px] drop-shadow-xl cursor-pointer rounded-full"
-                alt="userprofile"
-                onClick={login}
-              />
-              Menu
-              <MdMenu />
-            </p>
-            {isMenu && (
-              <motion.div
-                initial={{ opacity: 0, scale: 0.6 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.6 }}
-                className="w-40 bg-gray-50 shadow-xl rounded-lg flex flex-col absolute top-12 right-0"
-              >
-                {user && user.email === "ndichumuriithi@gmail.com" && (
-                  // <Link to={"/createItem"}>
-                  //   <p className="px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 transition-all duration-100 ease-in-out text-textColor text-base">
-                  //     New Item <MdAdd />
-                  //   </p>
-                  // </Link>
-                  <Link to={"/admn"}>
-                    <p className="px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 transition-all duration-100 ease-in-out text-textColor text-base">
-                      Admin <MdAdd />
-                    </p>
-                  </Link>
-                )}
 
-                {/* <ul className="flex flex-col ">
-                  <li
-                    className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-100 px-4 py-2"
-                    onClick={() => setIsMenu(false)}
-                  >
-                    Home
-                  </li>
-                  <li
-                    className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-100 px-4 py-2"
-                    onClick={() => setIsMenu(false)}
-                  >
-                    Menu
-                  </li>
-                  <li
-                    className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-100 px-4 py-2"
-                    onClick={() => setIsMenu(false)}
-                  >
-                    About Us
-                  </li>
-                  <li
-                    className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-100 px-4 py-2"
-                    onClick={() => setIsMenu(false)}
-                  >
-                    Service
-                  </li>
-                </ul> */}
-                <motion.ul
-                  initial={{ opacity: 0, x: 200 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: 200 }}
-                  className="gap-6 mt-1 m-4 hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-100"
+        <div className="relative">
+          <motion.img
+            whileTap={{ scale: 0.6 }}
+            src={user ? user.photoURL : Avatar}
+            className="w-10 min-w-[40px] h-10 min-h-[40px] drop-shadow-xl cursor-pointer rounded-full"
+            alt="userprofile"
+            onClick={SignIn}
+          />
+
+          {isMenu && (
+            <motion.div
+              initial={{ opacity: 0, scale: 0.6 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.6 }}
+              className="w-40 bg-gray-50 shadow-xl rounded-lg flex flex-col absolute top-12 right-0"
+            >
+              {user && user.email === "ndichumuriithi@gmail.com" && (
+                // <Link to={"/createItem"}>
+                //   <p className="px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 transition-all duration-100 ease-in-out text-textColor text-base">
+                //     New Item <MdAdd />
+                //   </p>
+                // </Link>
+                <Link to={"/admn"}>
+                  <p className="px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 transition-all duration-100 ease-in-out text-textColor text-base">
+                    Admin <MdAdd />
+                  </p>
+                </Link>
+              )}
+
+              <ul className="flex flex-col ">
+                <li
+                  className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-100 px-4 py-2"
                   onClick={() => setIsMenu(false)}
                 >
-                  <Link to={"/"} className="flex items-center mt-4">
-                    <li className="text-xl text-blue-900 hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer mt-4">
-                      Home
-                    </li>
-                  </Link>
-                  <Link to={"/about"}>
-                    <li className="text-lg text-blue-900 hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer mt-4">
-                      About Us
-                    </li>
-                  </Link>
-                  <Link to={"/products"}>
-                    <li className="text-lg text-blue-900 hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer mt-4">
-                      Products
-                    </li>
-                  </Link>
-                  <li className="text-lg text-blue-900 hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer mt-4">
-                    Contact Us
+                  Home
+                </li>
+                <li
+                  className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-100 px-4 py-2"
+                  onClick={() => setIsMenu(false)}
+                >
+                  Menu
+                </li>
+                <li
+                  className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-100 px-4 py-2"
+                  onClick={() => setIsMenu(false)}
+                >
+                  About Us
+                </li>
+                <li
+                  className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-100 px-4 py-2"
+                  onClick={() => setIsMenu(false)}
+                >
+                  Service
+                </li>
+              </ul>
+              <motion.ul
+                initial={{ opacity: 0, x: 200 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: 200 }}
+                className="gap-6 mt-4"
+              >
+                <Link to={"/"} className="flex items-center mt-4">
+                  <li className="text-xl text-blue-900 hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer mt-4">
+                    Home
                   </li>
-                </motion.ul>
-                <p
-                  className="m-2 p-2 rounded-md shadow-md flex items-center justify-center bg-gray-200 gap-3 cursor-pointer hover:bg-gray-300 transition-all duration-100 ease-in-out text-textColor text-base"
-                  onClick={logout}
-                >
-                  Logout <MdLogout />
-                </p>
-              </motion.div>
-            )}
-          </div>
-        ) : (
-          <>
-            <div className="relative">
+                </Link>
+                <Link to={"/about"}>
+                  <li className="text-lg text-blue-900 hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer mt-4">
+                    About Us
+                  </li>
+                </Link>
+                <Link to={"/products"}>
+                  <li className="text-lg text-blue-900 hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer mt-4">
+                    Products
+                  </li>
+                </Link>
+                <li className="text-lg text-blue-900 hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer mt-4">
+                  Contact Us
+                </li>
+              </motion.ul>
               <p
-                className="relative   rounded-full hover:bg-green-500 hover:text-blue-900 text-xl cursor-pointer outline-none hover:shadow-md  duration-500 transition-all ease-in-out"
-                // onClick={Signup}
-                onClick={() => setOpenSignUpInModal(true)}
+                className="m-2 p-2 rounded-md shadow-md flex items-center justify-center bg-gray-200 gap-3 cursor-pointer hover:bg-gray-300 transition-all duration-100 ease-in-out text-textColor text-base"
+                onClick={logout}
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M19 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 21c-2.331 0-4.512-.645-6.374-1.766z"
-                  />
-                </svg>
-                Sign Up
+                Logout <MdLogout />
               </p>
-            </div>
-            {/* Log in button */}
-            <div className="relative">
-              <p
-                className="relative   rounded-full hover:bg-green-500 hover:text-blue-900 text-xl cursor-pointer outline-none hover:shadow-md  duration-500 transition-all ease-in-out"
-                onClick={setOpenLogInModal}
-              >
-                <MdLogin /> LOG IN
-              </p>
-            </div>
-          </>
-        )}
-
+            </motion.div>
+          )}
+        </div>
         <div className="flex flex-col items-center justify-center min-h-screen py-2">
           {/* <Sidenav /> */}
         </div>

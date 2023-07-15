@@ -272,8 +272,8 @@ const Header = () => {
         {user ? (
           <div className="relative">
             <p
-              className="py-2 flex items-center gap- cursor-pointer  transition-all duration-100 ease-in-out 
-                hover:text-blue-900 text-textColor text-base"
+              className="py-2 flex items-center gap- cursor-pointer hover:bg-red-900 transition-all duration-100 ease-in-out 
+                hover:text-green-300 text-textColor text-base"
               onClick={login}
             >
               <motion.img

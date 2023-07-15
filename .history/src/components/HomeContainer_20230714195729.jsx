@@ -66,14 +66,12 @@ const HomeContainer = () => {
                   className="w-40 h-40 -mt-8 drop-shadow-2xl"
                   whileHover={{ scale: 1.4 }}
                 >
-                  <a href={n.Link}>
-                    <img
-                      src={n.imageSrc}
-                      className="w-20 lg:w-40 -mt-10 lg:-mt-20 "
-                      alt="I1"
-                      // onClick={}
-                    />
-                  </a>
+                  <a href=""><img
+                    src={n.imageSrc}
+                    className="w-20 lg:w-40 -mt-10 lg:-mt-20 "
+                    alt="I1"
+                    // onClick={}
+                  /></a>
                 </motion.div>
                 <p className="text-base lg:text-xl font-semibold text-textColor mt-2 lg:mt-4">
                   {n.name}

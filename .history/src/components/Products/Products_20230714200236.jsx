@@ -37,7 +37,7 @@ export default function Products({ color }) {
                   setOpenTab(1);
                 }}
                 data-toggle="tab"
-                href="#hospital"
+                href="hospital"
                 role="tablist"
               >
                 Hospital Products
@@ -56,7 +56,7 @@ export default function Products({ color }) {
                   setOpenTab(2);
                 }}
                 data-toggle="tab"
-                href="#laboratory"
+                href="laboratory"
                 role="tablist"
               >
                 Laboratory Products
@@ -76,7 +76,7 @@ export default function Products({ color }) {
                   setOpenTab(3);
                 }}
                 data-toggle="tab"
-                href="#link3"
+                href="link3"
                 role="tablist"
               >
                 Microscopes
@@ -96,7 +96,7 @@ export default function Products({ color }) {
                   setOpenTab(3);
                 }}
                 data-toggle="tab"
-                href="#vet"
+                href="vet"
                 role="tablist"
               >
                 Veterenart Products
@@ -115,7 +115,7 @@ export default function Products({ color }) {
                   setOpenTab(4);
                 }}
                 data-toggle="tab"
-                href="#link4"
+                href="link4"
                 role="tablist"
               >
                 Research Products

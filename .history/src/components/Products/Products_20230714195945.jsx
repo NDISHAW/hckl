@@ -96,7 +96,7 @@ export default function Products({ color }) {
                   setOpenTab(3);
                 }}
                 data-toggle="tab"
-                href="#vet"
+                href="#link4"
                 role="tablist"
               >
                 Veterenart Products
