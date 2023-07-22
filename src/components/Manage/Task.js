@@ -132,7 +132,7 @@ function Task({ id, imageURL, title, calories, price, category, description }) {
         />
       )}
 
-      {/* {open.edit && (
+      {open.edit && (
         <EditTask
           onClose={handleClose}
           toEditTitle={calories}
@@ -144,7 +144,7 @@ function Task({ id, imageURL, title, calories, price, category, description }) {
           open={open.edit}
           id={id}
         />
-      )} */}
+      )}
     </div>
   );
 }
