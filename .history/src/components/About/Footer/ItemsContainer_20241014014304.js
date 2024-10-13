@@ -11,7 +11,7 @@ const ItemsContainer = () => {
                 className="w-[100vw] h-[10vh] object-fill right-5"
                 alt="logo"
               />
-      {/* <Item Links={PRODUCTS} title="PRODUCTS" /> */}
+      <Item Links={PRODUCTS} title="PRODUCTS" />
       <Item Links={RESOURCES} title="RESOURCES" />
       <Item Links={COMPANY} title="CONTACT INFORMATION" />
       {/* <Item Links={SUPPORT} title="SUPPORT" /> */}

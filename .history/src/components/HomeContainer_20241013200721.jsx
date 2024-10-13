@@ -27,10 +27,10 @@ const HomeContainer = () => {
             </p>
           </div>
           <p className="text-base text-textColor text-center md:text-left md:w-[80%]">
-          HCKl is committed to quality of both products and services at affordable prices. In this regard, we endeavour to source and supply products from 
-            well renowned manufacturers with great product support. The commitment to support extends to having the local personnel thoroughly trained 
-            on the products both locally and at factory level, as well as maintaining stock of spares and accessories necessary to make the personnel 
-            efficient in their support service execution. THe directors and senior staff bring in more than 30 years experience working in the health sector.
+            Hospital Consumables Kenya Limited (HCKL) is a Kenyan company. The
+            directors bring in many years of experience in the Health care
+            sector, Our motivation is to provide quality products at affordable
+            prices in the Kenyan market and East Africa as a whole
           </p>
 
           <Link to={"/about"}>
@@ -43,18 +43,49 @@ const HomeContainer = () => {
           </Link>
         </div>
         <div className="py-2 flex-1 flex items-center relative ">
-          {/* <img
+          <img
             src={hrobg}
             className=" ml-auto h-450 w-full lg:w-auto lg:h-650 md:h-400 "
             alt="hero-bg"
-          /> */}
+          />
 
           <div className="w-full h-full absolute top-0 left-0 bottom-0 flex items-center justify-center lg:px-32  py-4 gap-5 flex-wrap">
-            <Slider />
+            {heroData &&
+              heroData.map((n) => (
+                <div
+                  key={n.id}
+                  className="  lg:w-190  p-4 bg-cardOverlay backdrop-blur-md rounded-3xl flex flex-col items-center justify-center "
+                >
+                  <motion.div
+                    className="w-40 h-40 -mt-8 drop-shadow-2xl"
+                    whileHover={{ scale: 1.4 }}
+                  >
+                    <a href={n.Link}>
+                      <img
+                        src={n.imageSrc}
+                        className="w-20 lg:w-40 -mt-10 lg:-mt-20 "
+                        alt="I1"
+                        // onClick={}
+                      />
+                    </a>
+                  </motion.div>
+                  <p className="text-base lg:text-xl font-semibold text-textColor mt-2 lg:mt-4">
+                    {n.name}
+                  </p>
+
+                  <p className="text-[12px] lg:text-sm text-lighttextGray font-semibold my-1 lg:my-3">
+                    {n.decp}
+                  </p>
+
+                  {/* <p className="text-sm font-semibold text-headingColor">
+                  <span className="text-xs text-red-600">$</span> {n.price}
+                </p> */}
+                </div>
+              ))}
           </div>
         </div>
       </section>
-      {/* 
+      {/* {/* <Slider /> */}
       <Content />
       <Slides /> */}
     </>

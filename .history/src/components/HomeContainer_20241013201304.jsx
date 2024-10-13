@@ -43,17 +43,17 @@ const HomeContainer = () => {
           </Link>
         </div>
         <div className="py-2 flex-1 flex items-center relative ">
-          {/* <img
+          <img
             src={hrobg}
             className=" ml-auto h-450 w-full lg:w-auto lg:h-650 md:h-400 "
             alt="hero-bg"
-          /> */}
+          />
 
           <div className="w-full h-full absolute top-0 left-0 bottom-0 flex items-center justify-center lg:px-32  py-4 gap-5 flex-wrap">
-            <Slider />
+            
           </div>
         </div>
-      </section>
+      </section><Slider />
       {/* 
       <Content />
       <Slides /> */}

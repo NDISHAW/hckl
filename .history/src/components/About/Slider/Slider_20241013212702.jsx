@@ -75,7 +75,7 @@ function Slider() {
           <Carousel
             data={data}
             time={2000}
-            width="950px"
+            width="1050px"
             height="500px"
             captionStyle={captionStyle}
             radius="20px"

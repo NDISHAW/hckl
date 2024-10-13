@@ -6,12 +6,22 @@ import logo from "../../../img/logo.png";
 const ItemsContainer = () => {
   return (
     <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 sm:px-8 px-5 py-16 mt-10">
-      <img
+      <h1
+          className="lg:text-4xl text-3xl md:mb-0 mb-6 lg:leading-normal font-semibold
+         md:w-2/5"
+        >
+          <span className="text-teal-400">
+            <Link to={"/"} className="flex items-center gap-2 ">
+              <img
                 src={logo}
-                className="w-[100vw] h-[10vh] object-fill right-5"
+                className="w-[125vw] h-[10vh] object-fill right-5"
                 alt="logo"
               />
-      {/* <Item Links={PRODUCTS} title="PRODUCTS" /> */}
+              {/* <p className="text-headingColor text-xl font-bold"> City</p> */}
+            </Link>
+          </span>
+        </h1>
+      <Item Links={PRODUCTS} title="PRODUCTS" />
       <Item Links={RESOURCES} title="RESOURCES" />
       <Item Links={COMPANY} title="CONTACT INFORMATION" />
       {/* <Item Links={SUPPORT} title="SUPPORT" /> */}

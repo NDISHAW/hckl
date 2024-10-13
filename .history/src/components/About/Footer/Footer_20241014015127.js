@@ -7,7 +7,7 @@ import logo from "../../../img/logo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-Main text-textcolor py-0">
+    <footer className="bg-Main text-textcolor py-">
       
       <ItemsContainer />
 

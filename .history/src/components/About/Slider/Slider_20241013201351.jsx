@@ -75,11 +75,11 @@ function Slider() {
           <Carousel
             data={data}
             time={2000}
-            width="950px"
+            width="850px"
             height="500px"
             captionStyle={captionStyle}
             radius="20px"
-            slideNumber={false}
+            slideNumber={fa}
             slideNumberStyle={slideNumberStyle}
             captionPosition="bottom"
             automatic={true}

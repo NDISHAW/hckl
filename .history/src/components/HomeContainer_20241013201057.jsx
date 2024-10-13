@@ -43,18 +43,49 @@ const HomeContainer = () => {
           </Link>
         </div>
         <div className="py-2 flex-1 flex items-center relative ">
-          {/* <img
+          <img
             src={hrobg}
             className=" ml-auto h-450 w-full lg:w-auto lg:h-650 md:h-400 "
             alt="hero-bg"
-          /> */}
+          />
 
           <div className="w-full h-full absolute top-0 left-0 bottom-0 flex items-center justify-center lg:px-32  py-4 gap-5 flex-wrap">
-            <Slider />
+            {heroData &&
+              heroData.map((n) => (
+                <div
+                  key={n.id}
+                  className="  lg:w-190  p-4 bg-cardOverlay backdrop-blur-md rounded-3xl flex flex-col items-center justify-center "
+                >
+                  <motion.div
+                    className="w-40 h-40 -mt-8 drop-shadow-2xl"
+                    whileHover={{ scale: 1.4 }}
+                  >
+                    <a href={n.Link}>
+                      <img
+                        src={n.imageSrc}
+                        className="w-20 lg:w-40 -mt-10 lg:-mt-20 "
+                        alt="I1"
+                        // onClick={}
+                      />
+                    </a>
+                  </motion.div>
+                  <p className="text-base lg:text-xl font-semibold text-textColor mt-2 lg:mt-4">
+                    {n.name}
+                  </p>
+
+                  <p className="text-[12px] lg:text-sm text-lighttextGray font-semibold my-1 lg:my-3">
+                    {n.decp}
+                  </p>
+
+                  {/* <p className="text-sm font-semibold text-headingColor">
+                  <span className="text-xs text-red-600">$</span> {n.price}
+                </p> */}
+                </div>
+              ))}
           </div>
         </div>
       </section>
-      {/* 
+      {/* {/* <Slider /> */}
       <Content />
       <Slides /> */}
     </>
