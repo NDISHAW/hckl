@@ -13,7 +13,7 @@ export const RESOURCES = [
 ];
 export const COMPANY = [
   { name: "P.O BOX 11038-00100 Nairobi Kenya", link: "#" },
-  { name: "Buruburu shopping Centre Ngemwa House 2nd floor  Office No. 23.", link: "#" },
+  { name: "Buruburu shopping Centre Ngemwa House 2 nd floor  Office No. 23.", link: "#" },
   { name: "Tele FAX: +254 (0)20 206 7969", link: "#" },
   { name: "E-mail: info@hckl.co.ke", link: "#" },
   { name: "Website: www.hckl.co.ke", link: "#" },

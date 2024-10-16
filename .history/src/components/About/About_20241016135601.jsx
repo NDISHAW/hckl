@@ -40,7 +40,7 @@ export default function About() {
       <About3 />
       {/* <Slider /> */}
       {/* <Content /> */}
-      {/* <Slides /> */}
+      <Slides />
       {/* <div
         className="w-screen h-auto flex flex-col bg-primary py-8"
         data-aos="fade-up-right"

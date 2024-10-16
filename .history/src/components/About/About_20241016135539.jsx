@@ -37,10 +37,9 @@ export default function About() {
       // data-aos-duration="1000"
     >
       {/* <Slide /> */}
-      <About3 />
-      {/* <Slider /> */}
-      {/* <Content /> */}
-      {/* <Slides /> */}
+      <Slider />
+      <Content />
+      <Slides />
       {/* <div
         className="w-screen h-auto flex flex-col bg-primary py-8"
         data-aos="fade-up-right"
