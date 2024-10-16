@@ -54,7 +54,7 @@ const Footer = () => {
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10
       text-center pt-1 text-textcolor text-sm pb-1 bg-Main"
       >
-        <span onClick={() => setOpenLogInModal(true)}> <MdLogin onClick={setOpenLogInModal} /></span>
+        <span onClick={() => setOpenSignUpInModal(true)}> <MdLogin onClick={setOpenLogInModal} /></span>
         <span >Hospital Consumables Kenya Limited - All rights reserved. Copyright © 2024</span>
 
         {/* <SocialIcons Icons={Icons} /> */}

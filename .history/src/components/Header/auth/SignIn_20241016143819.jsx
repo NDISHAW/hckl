@@ -121,14 +121,13 @@ const SignIn = ({ onClose, open, setOpenLogInModal }) => {
             {/* <button
               className="border border-blue-500 bg-blue-600 hover:bg-white w-full p-4 my- text-white text-xl hover:text-textColor"
               onClick={loginWithPopup}
-            > */}
+            >
               {/* Google Sign In */}
-              {/* <label>
+              <label>
                 <FcGoogle className="w-full font-bold text-2xl h-10" />
               </label>{" "}
-              Sign in with your Google Account */}
-            {/* </button> */}
-
+              Sign in with your Google Account
+            </button> */}
           </form>
         </div>
       </Modal>

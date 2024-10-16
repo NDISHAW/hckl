@@ -127,7 +127,7 @@ const SignIn = ({ onClose, open, setOpenLogInModal }) => {
                 <FcGoogle className="w-full font-bold text-2xl h-10" />
               </label>{" "}
               Sign in with your Google Account */}
-            {/* </button> */}
+            </button>
 
           </form>
         </div>

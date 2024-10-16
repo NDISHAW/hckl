@@ -5,8 +5,8 @@ import { Icons } from "./Menus";
 import { Link } from "react-router-dom";
 import logo from "../../../img/logo.png";
 import {  MdLogin } from "react-icons/md";
-import { useStateValue } from "../../../context/StateProvider";
-import { actionType } from "../../../context/reducer";
+import { useStateValue } from "../../context/StateProvider";
+import { actionType } from "../../context/reducer";
 import SignIn from "../../Header/auth/SignIn";
 import {
   getAuth,
@@ -17,7 +17,6 @@ import {
   onAuthStateChanged,
   signOut,
 } from "firebase/auth";
-import { app } from "../../../firebase.config";
 
 const Footer = () => {
   const firebaseAuth = getAuth(app);
@@ -54,7 +53,7 @@ const Footer = () => {
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10
       text-center pt-1 text-textcolor text-sm pb-1 bg-Main"
       >
-        <span onClick={() => setOpenLogInModal(true)}> <MdLogin onClick={setOpenLogInModal} /></span>
+        <span onClick={setOpenLogInModal}> <MdLogin onClick={setOpenLogInModal} /></span>
         <span >Hospital Consumables Kenya Limited - All rights reserved. Copyright © 2024</span>
 
         {/* <SocialIcons Icons={Icons} /> */}
