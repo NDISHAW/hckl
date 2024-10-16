@@ -40,7 +40,7 @@ export default function Slides() {
   };
 
   return (
-    <div className="w-screen h-flex flex flex-col  scrollbar-hide pb-8 mb-8  my-8 bg-transparent">
+    <div className="w-screen h-flex flex flex-col  scrollbar-hide pb-8 mb-28  my-8 bg-transparent">
       <p className="text-4xl justify-center font-bold capitalize text-Main relative before:absolute
        before:rounded-lg before:content before:w-16 before:h-1 before:-bottom-2 before:left-0 before:bg-gradient-to-tr from-blue-300 to-blue-900 
        transition-all ease-in-out duration-100 mr-auto ">

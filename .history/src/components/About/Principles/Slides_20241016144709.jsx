@@ -61,7 +61,7 @@ export default function Slides() {
                   </div>
                   <motion.p
                     whileTap={{ scale: 0.75 }}
-                    className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
+                    className="flex items-center gap-2 p-1 px-2 my-2 bg- rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
                   >
                     Sigma Laboratory Centrifuges is a worldwide leading
                     manufacturer of laboratory centrifuges. Centrifuges are
@@ -83,7 +83,7 @@ export default function Slides() {
                 <div className="testi-item">
                   <motion.p
                     whileTap={{ scale: 0.75 }}
-                    className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
+                    className="flex items-center gap-2 p-1 px-2 my-2 bg- rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
                   >
                     Our Mission is to build long-term relationships with our
                     customers and provide exceptional customer service by
@@ -105,7 +105,7 @@ export default function Slides() {
                 <div className="testi-item">
                   <motion.p
                     whileTap={{ scale: 0.75 }}
-                    className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
+                    className="flex items-center gap-2 p-1 px-2 my-2 bg- rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
                   >
                     Drucker Diagnostics is a world leader in the design and
                     production of centrifuges, dry hematology analzyers,
@@ -126,7 +126,7 @@ export default function Slides() {
                 <div className="testi-item">
                   <motion.p
                     whileTap={{ scale: 0.75 }}
-                    className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
+                    className="flex items-center gap-2 p-1 px-2 my-2 bg- rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
                   >
                     EUROIMMUN has extensive expertise in the fields of
                     immunology, cell biology, histology, biochemistry and
@@ -154,7 +154,7 @@ export default function Slides() {
                 <div className="testi-item">
                   <motion.p
                     whileTap={{ scale: 0.75 }}
-                    className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
+                    className="flex items-center gap-2 p-1 px-2 my-2 bg- rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
                   >
                     Euromex Microscopen BV is a leading manufacturer of
                     microscopes and other optical instruments. Euromex has
@@ -197,7 +197,7 @@ export default function Slides() {
                   </div>
                   <motion.p
                     whileTap={{ scale: 0.75 }}
-                    className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
+                    className="flex items-center gap-2 p-1 px-2 my-2 bg- rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
                   >
                     Our Mission is to build long-term relationships with our
                     customers and provide exceptional customer service by
@@ -212,7 +212,7 @@ export default function Slides() {
                   </div>
                   <motion.p
                     whileTap={{ scale: 0.75 }}
-                    className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
+                    className="flex items-center gap-2 p-1 px-2 my-2 bg- rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
                   >
                     Lmb Technologie GmbH installed the first device for
                     separation of whole blood and closed a gap to offer devices
@@ -228,7 +228,7 @@ export default function Slides() {
                 <div className="testi-item">
                   <motion.p
                     whileTap={{ scale: 0.75 }}
-                    className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
+                    className="flex items-center gap-2 p-1 px-2 my-2 bg- rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
                   >
                     PROHS is a company dedicated to the development and
                     manufacture of hospital, laboratory and veterinary
@@ -253,7 +253,7 @@ export default function Slides() {
                     <img src={qbc} alt="no internet connection"></img>
                     <motion.p
                       whileTap={{ scale: 0.75 }}
-                      className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
+                      className="flex items-center gap-2 p-1 px-2 my-2 bg- rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
                     >
                       Our Mission is to build long-term relationships with our
                       customers and provide exceptional customer service by
@@ -266,7 +266,7 @@ export default function Slides() {
                 <div className="testi-item">
                   <motion.p
                     whileTap={{ scale: 0.75 }}
-                    className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
+                    className="flex items-center gap-2 p-1 px-2 my-2 bg- rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
                   >
                     Sheldon Manufacturing, Inc. is an ISO 9001:2008 certified
                     manufacturer of high quality and innovative constant
@@ -288,7 +288,7 @@ export default function Slides() {
                   </div>
                   <motion.p
                     whileTap={{ scale: 0.75 }}
-                    className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
+                    className="flex items-center gap-2 p-1 px-2 my-2 bg- rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
                   >
                     Since established in 1987, we are dedicated to manufacture
                     high quality plastic lab-ware, consistent to the finest
@@ -303,7 +303,7 @@ export default function Slides() {
                 <div className="testi-item">
                   <motion.p
                     whileTap={{ scale: 0.75 }}
-                    className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
+                    className="flex items-center gap-2 p-1 px-2 my-2 bg- rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
                   >
                     With a heritage stretching back almost 30 years, Woodley
                     Equipment is a world leading, one- stop supplier of

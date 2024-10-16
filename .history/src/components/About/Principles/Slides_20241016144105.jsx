@@ -40,10 +40,8 @@ export default function Slides() {
   };
 
   return (
-    <div className="w-screen h-flex flex flex-col  scrollbar-hide pb-8 mb-8  my-8 bg-transparent">
-      <p className="text-4xl justify-center font-bold capitalize text-Main relative before:absolute
-       before:rounded-lg before:content before:w-16 before:h-1 before:-bottom-2 before:left-0 before:bg-gradient-to-tr from-blue-300 to-blue-900 
-       transition-all ease-in-out duration-100 mr-auto ">
+    <div className="w-screen h-flex flex flex-col  scrollbar-hide pb-8 mb-28  my-8 bg-transparent">
+      <p className="text-4xl justify-center font-bold capitalize text-Main relative before:absolute before:rounded-lg before:content before:w-16 before:h-1 before:-bottom-2 before:left-0 before:bg-gradient-to-tr from-blue-300 to-blue-900 transition-all ease-in-out duration-100 mr-auto ">
         Our Principles
       </p>
       <motion.div className="slide-section w-full flex items-center justify-between ">
@@ -152,6 +150,9 @@ export default function Slides() {
               </div>
               <div className="col-lg-12">
                 <div className="testi-item">
+                  <div className="client-info">
+                    <img src={euromex} alt="no internet connection"></img>
+                  </div>
                   <motion.p
                     whileTap={{ scale: 0.75 }}
                     className="flex items-center gap-2 p-1 px-2 my-2 bg-gray-100 rounded-md hover:shadow-md  cursor-pointer text-textColor text-base"
@@ -173,9 +174,6 @@ export default function Slides() {
                     of optical instruments and high level optical and opto-
                     mechanical components.
                   </motion.p>
-                  <div className="client-info">
-                    <img src={euromex} alt="no internet connection"></img>
-                  </div>
                 </div>
               </div>
               {/* <div className="col-lg-12">
@@ -190,7 +188,7 @@ export default function Slides() {
                   </div>
                 </div>
               </div> */}
-              {/* <div className="col-lg-12">
+              <div className="col-lg-12">
                 <div className="testi-item">
                   <div className="client-info">
                     <img src={fresenius} alt="no internet connection"></img>
@@ -204,7 +202,7 @@ export default function Slides() {
                     pursuing business through innovation.
                   </motion.p>
                 </div>
-              </div> */}
+              </div>
               <div className="col-lg-12">
                 <div className="testi-item">
                   <div className="client-info">
