@@ -87,7 +87,7 @@ const App = () => {
       {/* <Slider /> */}
       {/* <div className="w-auto h-auto flex flex-col bg-primary scrollbar-hide"> */}
         <Header /> <br />
-        <main className="mt- md:mt-2  px-4 md:px-16 py-4 w-full scrollbar-hide">
+        <main className="mt- md:mt- px-4 md:px-16 py-4 w-full scrollbar-hide">
           <Routes>
             <Route exact path="/*" element={<Newhome />} />
             <Route path="/products" element={<Products />} />

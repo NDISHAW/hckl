@@ -311,7 +311,6 @@ import sigma from "../img/sigma.jpeg";
 import volumat1 from "../img/volumat1.png";
 import centrifuge from "../img/centrifuge.png";
 import euro from "../img/euro.jpg";
-import { Link } from "react-router-dom";
 
 const Button = ({ className, onClick, text, style }) => {
   return (
@@ -326,9 +325,9 @@ const Button = ({ className, onClick, text, style }) => {
   );
 };
 
-const Hero = ({ colorDeep, mainText, subText, shadow, mobileShadow, img, link }) => {
+const Hero = ({ colorDeep, mainText, subText, shadow, mobileShadow, img }) => {
   return (
-    <main className="relative w-full h-screen">
+    <main className="relative w-full h-screen overflow-hidden">
       {/* Background Image */}
       <img
         src={img}
@@ -341,22 +340,18 @@ const Hero = ({ colorDeep, mainText, subText, shadow, mobileShadow, img, link })
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 lg:px-16 z-10 bg-opacity-60 bg">
         <div className="flex flex-col gap-4 w-full lg:w-1/2 text-white">
           {/* Text */}
-          <h1 className="md:text-5xl text-4xl font-bold leading-tight text-textColor">
+          <h1 className="md:text-5xl text-4xl font-bold leading-tight">
             We're about <span style={{ color: colorDeep }}>{mainText}!</span>
           </h1>
           <p className="leading-normal md:text-2xl text-lg">{subText}</p>
-
-          {/* Button */}
-          <a href={link} target="_blank" rel="noopener noreferrer">
-            <Button
-              text="View Our Principle"
-              className="mt-8 text-xl font-bold py-4 px-9 focus:outline-none md:w-2/5 lg:w-1/3"
-              style={{
-                backgroundColor: colorDeep,
-                boxShadow: window.innerWidth > 767 ? shadow : mobileShadow,
-              }}
-            />
-          </a>
+                 {/* Button */}
+      <Button 
+      type="button"
+         text="View Our Principle"
+        className="mt-8 text-xl font-bold py-4 px-9 focus:outline-none md:w-2/5 lg:w-1/3"
+         style={{ backgroundColor: colorDeep, boxShadow: window.innerWidth > 767 ? shadow : mobileShadow }}
+         onClick={() => alert(`Navigating to ${mainText} details`)}
+      /> 
         </div>
       </div>
     </main>
@@ -430,7 +425,7 @@ const data = [
     colorLite: "#FFFFFF",
     mainText: "evermed",
     subText:
-      "Experts in professional refrigiration for over 60 years",
+      "Experts in professi",
     shadow: "0px 10px 20px rgba(67, 30, 30, 0.8)",
     mobileShadow: "0px 5px 20px rgba(67, 30, 30, 0.8)",
     img: evermed,
@@ -443,11 +438,10 @@ const data = [
     colorLite: "#FFFFFF",
     mainText: "sigma",
     subText:
-      "Laboratory centrifuges for highest demands",
+      "Reveal Your Radiance with Promoil: Where Beauty Meets Nature's Best.",
     shadow: "0px 10px 20px rgba(67, 30, 30, 0.8)",
     mobileShadow: "0px 5px 20px rgba(67, 30, 30, 0.8)",
     img: sigma,
-    link:"https://www.sigma-zentrifugen.de/en"
   },
   {
     id: 8,
@@ -459,7 +453,6 @@ const data = [
     shadow: "0px 10px 20px rgba(67, 30, 30, 0.8)",
     mobileShadow: "0px 5px 20px rgba(67, 30, 30, 0.8)",
     img: volumat1,
-    link:"https://www.agiliasystem.com/"
   },
   {
     id: 8,
@@ -471,7 +464,6 @@ const data = [
     shadow: "0px 10px 20px rgba(67, 30, 30, 0.8)",
     mobileShadow: "0px 5px 20px rgba(67, 30, 30, 0.8)",
     img: euro,
-    link:"https://www.euroimmun.com/"
   },
 ];
 
@@ -487,7 +479,7 @@ const NewHome = () => {
       modules={[Autoplay, EffectFade, Pagination]}
       className="mySwiper"
     >
-      {data.map(({ id, colorDeep, mainText, subText, shadow, mobileShadow, img, link }) => (
+      {data.map(({ id, colorDeep, mainText, subText, shadow, mobileShadow, img, buttonStyle }) => (
         <SwiperSlide key={id} className="relative w-full h-screen">
           <Hero
             colorDeep={colorDeep}
@@ -496,8 +488,24 @@ const NewHome = () => {
             shadow={shadow}
             mobileShadow={mobileShadow}
             img={img}
-            link={link} // Pass the link property here
           />
+
+          {/* Custom Button */}
+          {/* <Button
+            text="Learn More"
+            className="absolute mt-8 text-xl font-bold py-4 px-9 focus:outline-none md:w-2/5 lg:w-1/3"
+            style={{
+              position: "absolute ",
+              zIndex: 10,
+              ...buttonStyle,
+              backgroundColor: "colorDeep",
+              boxShadow: window.innerWidth > 767 ? shadow : mobileShadow // Apply custom positioning for each slide
+            }}
+            onClick={() => alert(`Navigating to ${mainText} details`)}
+          /> */}
+          {/* className="mt-8 text-xl font-bold py-4 px-9 focus:outline-none md:w-2/5 lg:w-1/3"
+         style={{ backgroundColor: colorDeep, boxShadow: window.innerWidth > 767 ? shadow : mobileShadow }} */}
+      
         </SwiperSlide>
       ))}
     </Swiper>

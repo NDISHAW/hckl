@@ -341,7 +341,7 @@ const Hero = ({ colorDeep, mainText, subText, shadow, mobileShadow, img, link })
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 lg:px-16 z-10 bg-opacity-60 bg">
         <div className="flex flex-col gap-4 w-full lg:w-1/2 text-white">
           {/* Text */}
-          <h1 className="md:text-5xl text-4xl font-bold leading-tight text-textColor">
+          <h1 className="md:text-5xl text-4xl font-bold leading-tight">
             We're about <span style={{ color: colorDeep }}>{mainText}!</span>
           </h1>
           <p className="leading-normal md:text-2xl text-lg">{subText}</p>

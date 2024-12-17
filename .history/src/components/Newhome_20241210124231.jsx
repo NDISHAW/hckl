@@ -341,7 +341,7 @@ const Hero = ({ colorDeep, mainText, subText, shadow, mobileShadow, img, link })
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 lg:px-16 z-10 bg-opacity-60 bg">
         <div className="flex flex-col gap-4 w-full lg:w-1/2 text-white">
           {/* Text */}
-          <h1 className="md:text-5xl text-4xl font-bold leading-tight text-textColor">
+          <h1 className="md:text-5xl text-4xl font-bold leading-tight">
             We're about <span style={{ color: colorDeep }}>{mainText}!</span>
           </h1>
           <p className="leading-normal md:text-2xl text-lg">{subText}</p>
@@ -362,118 +362,6 @@ const Hero = ({ colorDeep, mainText, subText, shadow, mobileShadow, img, link })
     </main>
   );
 };
-
-const data = [
-  {
-    id: 1,
-    colorDeep: "#3E4659",
-    colorLite: "#FFFFFF",
-    mainText: "Microscopes",
-    subText:
-      "Nourish Your Skin: Experience Promoil's Argan Infused Elegance",
-    shadow: "0px 10px 20px rgba(78, 112, 149, 0.8)",
-    mobileShadow: "0px 5px 20px rgba(78, 112, 149, 0.8)",
-    link:"https://www.euromex.com/en/",
-    img: microscopes,
-  },
-  {
-    id: 5,
-    colorDeep: "#13456E",
-    colorLite: "#FFFFFF",
-    mainText: "nexuszoom",
-    subText:
-      "Reveal Your Radiance with Promoil: Where Beauty Meets Nature's Best.",
-    shadow: "0px 10px 20px rgba(67, 30, 30, 0.8)",
-    mobileShadow: "0px 5px 20px rgba(67, 30, 30, 0.8)",
-    img: nexuszoom,
-    link:"https://www.euromex.com/en/"
-  },
-  {
-    id: 2,
-    colorDeep: "#B60313",
-    colorLite: "#D6E6F3",
-    mainText: "nature",
-    subText:
-      "Transform Your Skin, Unleash Your Beauty: Promoil's Argan Oil Magic.",
-    shadow: "0px 10px 20px rgba(130, 134, 99, 0.8)",
-    mobileShadow: "0px 5px 20px rgba(130, 134, 99, 0.8)",
-    img: eldon,
-    link:"https://eldoncard.com/"
-  },
-  {
-    id: 3,
-    colorDeep: "#431e1e",
-    colorLite: "#FFFFFF",
-    mainText: "medcon",
-    subText:
-      "Reveal Your Radiance with Promoil: Where Beauty Meets Nature's Best.",
-    shadow: "0px 10px 20px rgba(67, 30, 30, 0.8)",
-    mobileShadow: "0px 5px 20px rgba(67, 30, 30, 0.8)",
-    img: medcon,
-    link:"http://www.medconn.com/en"
-  },
-  {
-    id: 4,
-    colorDeep: "#35553f",
-    colorLite: "#F3F1F1",
-    mainText: "euroimmune",
-    subText:
-      "Reveal Your Radiance with Promoil: Where Beauty Meets Nature's Best.",
-    shadow: "0px 10px 20px rgba(67, 30, 30, 0.8)",
-    mobileShadow: "0px 5px 20px rgba(67, 30, 30, 0.8)",
-    img: euroimmune,
-    link:"https://www.euroimmun.com/"
-  },        
-  {
-    id: 6,
-    colorDeep: "#13456E",
-    colorLite: "#FFFFFF",
-    mainText: "evermed",
-    subText:
-      "Experts in professional refrigiration for over 60 years",
-    shadow: "0px 10px 20px rgba(67, 30, 30, 0.8)",
-    mobileShadow: "0px 5px 20px rgba(67, 30, 30, 0.8)",
-    img: evermed,
-    link:"https://www.evermed.it/en/"
-  },
-  
-  {
-    id: 7,
-    colorDeep: "#13456E",
-    colorLite: "#FFFFFF",
-    mainText: "sigma",
-    subText:
-      "Laboratory centrifuges for highest demands",
-    shadow: "0px 10px 20px rgba(67, 30, 30, 0.8)",
-    mobileShadow: "0px 5px 20px rgba(67, 30, 30, 0.8)",
-    img: sigma,
-    link:"https://www.sigma-zentrifugen.de/en"
-  },
-  {
-    id: 8,
-    colorDeep: "#13456E",
-    colorLite: "#FFFFFF",
-    mainText: "volumat1",
-    subText:
-      "Reveal Your Radiance with Promoil: Where Beauty Meets Nature's Best.",
-    shadow: "0px 10px 20px rgba(67, 30, 30, 0.8)",
-    mobileShadow: "0px 5px 20px rgba(67, 30, 30, 0.8)",
-    img: volumat1,
-    link:"https://www.agiliasystem.com/"
-  },
-  {
-    id: 8,
-    colorDeep: "#E21F49",
-    colorLite: "#EBEBEB",
-    mainText: "euro",
-    subText:
-      "Reveal Your Radiance with Promoil: Where Beauty Meets Nature's Best.",
-    shadow: "0px 10px 20px rgba(67, 30, 30, 0.8)",
-    mobileShadow: "0px 5px 20px rgba(67, 30, 30, 0.8)",
-    img: euro,
-    link:"https://www.euroimmun.com/"
-  },
-];
 
 const NewHome = () => {
   return (
