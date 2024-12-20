@@ -51,7 +51,6 @@ export default function Products({ color }) {
                 Hospital Products
               </a>
             </li>
-            {/* Laboratory Products */}
             <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
               <a
                 className={
@@ -72,7 +71,45 @@ export default function Products({ color }) {
               </a>
             </li>
 
-            {/* Research Products */}
+            {/* <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
+              <a
+                className={
+                  "text-lg font-bold uppercase px-5 py-1 shadow-lg rounded block leading-normal " +
+                  (openTab === 3
+                    ? "text-white bg-blue-400"
+                    : "text-" + color + "-600 bg-white")
+                }
+                onClick={(e) => {
+                  e.preventDefault();
+                  setOpenTab(3);
+                }}
+                data-toggle="tab"
+                href="#link3"
+                role="tablist"
+              >
+                Microscopes
+              </a>
+            </li> */}
+
+            {/* <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
+              <a
+                className={
+                  "text-lg font-bold uppercase px-5 py-1 shadow-lg rounded block leading-normal " +
+                  (openTab === 3
+                    ? "text-white bg-blue-400"
+                    : "text-" + color + "-600 bg-white")
+                }
+                onClick={(e) => {
+                  e.preventDefault();
+                  setOpenTab(3);
+                }}
+                data-toggle="tab"
+                href="#vet"
+                role="tablist"
+              >
+                Veterenart Products
+              </a>
+            </li> */}
             <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
               <a
                 className={

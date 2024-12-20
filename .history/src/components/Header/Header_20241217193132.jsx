@@ -96,10 +96,10 @@ const Header = () => {
 
   return (
     <header
-      // className={`${navClassList.join(
-      //   " "
-      // )} fixed z-50 w-screen p-3 px-4 md:p-6 md:px-16 bg-primary backdrop-blur drop-shadow-lg bg-opacity-100`}
-      className="fixed z-50 w-screen p-3 px-4 md:p-6 md:px-16 bg-primary mb-4 backdrop-blur "
+      className={`${navClassList.join(
+        " "
+      )} fixed z-50 w-screen p-3 px-4 md:p-6 md:px-16 bg-primary backdrop-blur drop-shadow-lg bg-opacity-100`}
+      // className="fixed  w-screen p-3 px-4 md:p-6 md:px-16 bg-Main backdrop-blur drop-shadow-lg bg-opacity-100"
     >
       {/* desktop & tablet */}
       <div className="hidden md:flex w-full h-full items-center justify-between fill-white  ">
@@ -118,7 +118,7 @@ const Header = () => {
             <Link to={"/"}>
               <li className="text-lg text-textColor hover:text-xl hover:text-headingColor hover:font-bold duration-200 transition-all ease-in-out cursor-pointer
               ">
-                Home
+               
               </li>
             </Link>
             <Link to={"/about"}>

@@ -101,8 +101,8 @@ const App = () => {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
-      </div>
-      {cartShow && <CartContainer />}
+      {/* </div> */}
+      {/* {cartShow && <CartContainer />} */}
       {openLogInModal && (
         <SignIn
           onClose={() => setOpenLogInModal(false)}

@@ -85,7 +85,7 @@ const App = () => {
       {/* <> */}
 
       {/* <Slider /> */}
-      <div className="w-auto h-auto flex flex-col bg-primary scrollbar-hide">
+      {/* <div className="w-auto h-auto flex flex-col bg-primary scrollbar-hide"> */}
         <Header /> <br />
         <main className="mt- md:mt-2  px-4 md:px-16 py-4 w-full scrollbar-hide">
           <Routes>
@@ -101,7 +101,7 @@ const App = () => {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
-      </div>
+      {/* </div> */}
       {cartShow && <CartContainer />}
       {openLogInModal && (
         <SignIn

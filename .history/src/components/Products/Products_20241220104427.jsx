@@ -72,7 +72,7 @@ export default function Products({ color }) {
               </a>
             </li>
 
-            {/* Research Products */}
+            
             <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
               <a
                 className={
