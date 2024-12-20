@@ -42,8 +42,8 @@ export default function ProductDetails({ data }) {
 
   return (
     
-<div class="font-sans bg-transparent h-screen pt-4">
-            <div class="p-8 lg:max-w-7xl max-w-2xl max-lg:mx-auto" data-aos="fade-up-left">
+<div class="font-sans bg-transparent h-screen ">
+            <div class="pt-12 lg:max-w-7xl max-w-2xl max-lg:mx-auto" data-aos="fade-up-left">
                 <div class="grid items-start grid-cols-1 lg:grid-cols-5 gap-12">
                     <div class="lg:col-span-3 w-full lg:sticky top-0 text-center">
                         <div class="bg-transparent px-4 py-12 rounded-xl">

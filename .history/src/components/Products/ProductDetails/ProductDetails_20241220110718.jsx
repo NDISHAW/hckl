@@ -42,7 +42,7 @@ export default function ProductDetails({ data }) {
 
   return (
     
-<div class="font-sans bg-transparent h-screen pt-4">
+<div class="font-sans bg-transparent h-">
             <div class="p-8 lg:max-w-7xl max-w-2xl max-lg:mx-auto" data-aos="fade-up-left">
                 <div class="grid items-start grid-cols-1 lg:grid-cols-5 gap-12">
                     <div class="lg:col-span-3 w-full lg:sticky top-0 text-center">

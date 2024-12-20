@@ -42,7 +42,7 @@ export default function ProductDetails({ data }) {
 
   return (
     
-<div class="font-sans bg-transparent h-screen pt-4">
+<div class="font-sans bg-transparent">
             <div class="p-8 lg:max-w-7xl max-w-2xl max-lg:mx-auto" data-aos="fade-up-left">
                 <div class="grid items-start grid-cols-1 lg:grid-cols-5 gap-12">
                     <div class="lg:col-span-3 w-full lg:sticky top-0 text-center">
@@ -62,7 +62,7 @@ export default function ProductDetails({ data }) {
                 <div class="flex flex-wrap gap-4 mt-8">
                 <button type="button" class="min-w-[200px] px-4 py-3 bg-blue-300 hover:bg-blue-400 text-black text-sm font-semibold rounded"
                 onClick={() => Navigate(`/contact`)}>Contact Us</button>
-                <button type="button" class="min-w-[200px] px-4 py-2.5 border border-blue-300 bg-transparent text-textcolor text-sm hover:bg-blue-400 text-black font-semibold rounded"onClick={() => setItems([...cartItems, item])}>
+                <button type="button" class="min-w-[200px] px-4 py-2.5 border border-blue-300 bg-transparent text-textcolor text-sm hover:bg-blue-400 text-black text-sm font-semibold rounded"onClick={() => setItems([...cartItems, item])}>
                 {/* <motion.div
                 whileTap={{ scale: 0.75 }}
                 className="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center cursor-pointer hover:shadow-md -mt-8"
@@ -76,7 +76,7 @@ export default function ProductDetails({ data }) {
                             <ul class="flex">
                                 <li class="text-textcolor font-semibold text-sm bg-transparent py-3 px-8 border-b-2 border-blue-300 cursor-pointer transition-all">
                                     Reviews</li>
-                                <li class="text-textcolor font-semibold text-sm py-3 px-8 cursor-pointer">More Info</li>
+                                <li class="text-textcolor font-semibold text-sm py-3 px-8 cursor-pointer">Sellter</li>
                             </ul>
 
                             <div class="mt-8">

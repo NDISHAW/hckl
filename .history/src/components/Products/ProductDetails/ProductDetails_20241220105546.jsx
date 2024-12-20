@@ -3,7 +3,6 @@ import { useParams, useLocation, Navigate } from 'react-router-dom';
 import { useStateValue } from '../../../context/StateProvider';
 import { MdShoppingBasket } from "react-icons/md";
 import { motion } from "framer-motion";
-import { actionType } from "../../../context/reducer";
 
 export default function ProductDetails({ data }) {
   const [show, setShow] = useState(false);
@@ -42,41 +41,96 @@ export default function ProductDetails({ data }) {
 
   return (
     
-<div class="font-sans bg-transparent h-screen pt-4">
+<div class="font-sans bg-transparent">
             <div class="p-8 lg:max-w-7xl max-w-2xl max-lg:mx-auto" data-aos="fade-up-left">
                 <div class="grid items-start grid-cols-1 lg:grid-cols-5 gap-12">
                     <div class="lg:col-span-3 w-full lg:sticky top-0 text-center">
                         <div class="bg-transparent px-4 py-12 rounded-xl">
                             <img src={product.imageURL} alt="Product" class="w-9/12 rounded object-cover mx-auto" />
-                        </div>                      
+                        </div>
+
+                        {/* <div class="mt-4 flex flex-wrap justify-center gap-4 mx-auto">
+                            <div class="w-[90px] h-20 flex items-cemter justify-center bg-transparent rounded-xl p-4 cursor-pointer">
+                                <img src="https://readymadeui.com/images/coffee3.webp" alt="Product2" class="w-full object-contain" />
+                            </div>
+                            <div class="w-[90px] h-20 flex items-cemter justify-center bg-transparent rounded-xl p-4 cursor-pointer">
+                                <img src="https://readymadeui.com/images/coffee4.webp" alt="Product2" class="w-full object-contain" />
+                            </div>
+                            <div class="w-[90px] h-20 flex items-cemter justify-center bg-transparent rounded-xl p-4 cursor-pointer">
+                                <img src="https://readymadeui.com/images/coffee5.webp" alt="Product2" class="w-full object-contain" />
+                            </div>
+                            <div class="w-[90px] h-20 flex items-cemter justify-center bg-transparent rounded-xl p-4 cursor-pointer">
+                                <img src="https://readymadeui.com/images/coffee6.webp" alt="Product2" class="w-full object-contain" />
+                            </div>
+                        </div> */}
                     </div>
 
                     <div class="lg:col-span-2">
                         <h2 class="text-3xl font-semibold text-textcolor">{product.title}</h2>
+
+                        {/* <div class="flex space-x-2 mt-4">
+                            <svg class="w-[18px] fill-blue-300" viewBox="0 0 14 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                            </svg>
+                            <svg class="w-[18px] fill-blue-300" viewBox="0 0 14 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                            </svg>
+                            <svg class="w-[18px] fill-yellow-300" viewBox="0 0 14 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                            </svg>
+                            <svg class="w-[18px] fill-yellow-300" viewBox="0 0 14 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                            </svg>
+                            <svg class="w-[18px] fill-[#CED5D8]" viewBox="0 0 14 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
+                            </svg>
+                            <h4 class="text-white text-base">500 Reviews</h4>
+                        </div> */}
+
+                        {/* <div class="flex flex-wrap gap-4 mt-8">
+                            <p class="text-white text-4xl font-semibold">$12</p>
+                            <p class="text-gray-400 text-base"><strike>$16</strike> <span class="text-sm ml-1">Tax included</span></p>
+                        </div> */}
+
+                        
+
                         <div class="mt-8">
                             <h3 class="text-xl font-semibold text-textcolor">{product.title}</h3>
                             <ul class="space-y-3 list-disc mt-4 pl-4 text-sm text-textcolor">
                                 <li>{product.calories}</li>
+                                {/* <li>Easy to prepare. It can be brewed using various methods, from drip machines to manual pour-overs.</li>
+                                <li>Available in various sizes, from a standard espresso shot to a large Americano, catering to different preferences.</li>
+                                <li>You can customize your coffee by adding cream, sugar, or flavorings to suit your taste preferences.</li> */}
                             </ul>
                         </div>
-                <div class="flex flex-wrap gap-4 mt-8">
-                <button type="button" class="min-w-[200px] px-4 py-3 bg-blue-300 hover:bg-blue-400 text-black text-sm font-semibold rounded"
-                onClick={() => Navigate(`/contact`)}>Contact Us</button>
-                <button type="button" class="min-w-[200px] px-4 py-2.5 border border-blue-300 bg-transparent text-textcolor text-sm hover:bg-blue-400 text-black font-semibold rounded"onClick={() => setItems([...cartItems, item])}>
-                {/* <motion.div
-                whileTap={{ scale: 0.75 }}
-                className="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center cursor-pointer hover:shadow-md -mt-8"
-                onClick={() => setItems([...cartItems, item])}
-                 >
-                <MdShoppingBasket className="text-white" />
-                </motion.div> */}
+                        <div class="flex flex-wrap gap-4 mt-8">
+                            <button type="button" class="min-w-[200px] px-4 py-3 bg-blue-300 hover:bg-blue-400 text-black text-sm font-semibold rounded"
+                            onClick={() => Navigate(`/contact`)}>Buy now</button>
+                            <button type="button" class="min-w-[200px] px-4 py-2.5 border border-blue-300 bg-transparent text-textcolor text-sm font-semibold rounded">
+                            <motion.div
+                                            whileTap={{ scale: 0.75 }}
+                                            className="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center cursor-pointer hover:shadow-md -mt-8"
+                                            onClick={() => setItems([...cartItems, item])}
+                                          >
+                                            <MdShoppingBasket className="text-white" />
+                                          </motion.div>
               Add to cart</button>
                         </div>
                         <div class="mt-8">
                             <ul class="flex">
                                 <li class="text-textcolor font-semibold text-sm bg-transparent py-3 px-8 border-b-2 border-blue-300 cursor-pointer transition-all">
                                     Reviews</li>
-                                <li class="text-textcolor font-semibold text-sm py-3 px-8 cursor-pointer">More Info</li>
+                                <li class="text-textcolor font-semibold text-sm py-3 px-8 cursor-pointer">Sellter</li>
                             </ul>
 
                             <div class="mt-8">
