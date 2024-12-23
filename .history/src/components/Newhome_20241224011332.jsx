@@ -360,7 +360,6 @@ const Hero = ({ colorDeep, mainText, subText, shadow, mobileShadow, img, link })
           </a>
         </div>
       </div>
-      
     </main>
   );
 };
@@ -382,7 +381,7 @@ const data = [
     id: 5,
     colorDeep: "#13456E",
     colorLite: "#FFFFFF",
-    // mainText: "Nexuszoom",
+    mainText: "Nexuszoom",
     subText:
       "The NexiusZoom stereo microscopes of Euromex enable examining your specimen with high-performance precision.  ",
     shadow: "0px 10px 20px rgba(67, 30, 30, 0.8)",

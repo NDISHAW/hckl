@@ -478,6 +478,7 @@ const data = [
 ];
 
 const NewHome = () => {
+  const [{ foodItems, cartShow }, dispatch] = useStateValue();
   return (
     <Swiper
       spaceBetween={30}
@@ -498,10 +499,11 @@ const NewHome = () => {
             shadow={shadow}
             mobileShadow={mobileShadow}
             img={img}
-            link={link} // Pass the link property here
+            link={link}
           />
         </SwiperSlide>
       ))}
+       {cartShow && <CartContainer />}
     </Swiper>
   );
 };

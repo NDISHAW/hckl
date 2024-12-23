@@ -4,18 +4,15 @@ import { useStateValue } from '../../../context/StateProvider';
 import { MdShoppingBasket } from "react-icons/md";
 import { motion } from "framer-motion";
 import { actionType } from "../../../context/reducer";
-import CartContainer from "../../Cart/CartContainer";
 
 export default function ProductDetails({ data }) {
-    
   const [show, setShow] = useState(false);
   const [text, setText] = useState("Select Size");
 
   const item = data?.find((item) => item.id === id);
   const { id } = useParams(); // Get item ID from the URL
-  const [{ foodItems,cartShow }] = useStateValue();
+  const [{ foodItems }] = useStateValue();
   // const product = foodItems.find((item) => item.id === Number(id));
-  
   const { state } = useLocation();
   const product = state?.product;
   useEffect(() => {

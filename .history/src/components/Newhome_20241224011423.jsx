@@ -498,10 +498,11 @@ const NewHome = () => {
             shadow={shadow}
             mobileShadow={mobileShadow}
             img={img}
-            link={link} // Pass the link property here
+            link={link}
           />
         </SwiperSlide>
       ))}
+       {cartShow && <CartContainer />}
     </Swiper>
   );
 };

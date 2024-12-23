@@ -312,6 +312,8 @@ import volumat1 from "../img/volumat1.png";
 import centrifuge from "../img/centrifuge.png";
 import euro from "../img/euro.jpg";
 import { Link } from "react-router-dom";
+import { useStateValue } from "../context/StateProvider";
+import CartContainer from "./Cart/CartContainer";
 
 const Button = ({ className, onClick, text, style }) => {
   return (
@@ -478,6 +480,7 @@ const data = [
 ];
 
 const NewHome = () => {
+  const [{ foodItems, cartShow }, dispatch] = useStateValue();
   return (
     <Swiper
       spaceBetween={30}
@@ -498,10 +501,11 @@ const NewHome = () => {
             shadow={shadow}
             mobileShadow={mobileShadow}
             img={img}
-            link={link} // Pass the link property here
+            link={link}
           />
         </SwiperSlide>
       ))}
+       {cartShow && <CartContainer />}
     </Swiper>
   );
 };

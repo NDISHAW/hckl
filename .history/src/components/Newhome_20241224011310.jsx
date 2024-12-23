@@ -360,7 +360,6 @@ const Hero = ({ colorDeep, mainText, subText, shadow, mobileShadow, img, link })
           </a>
         </div>
       </div>
-      
     </main>
   );
 };

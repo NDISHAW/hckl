@@ -13,9 +13,8 @@ export default function ProductDetails({ data }) {
 
   const item = data?.find((item) => item.id === id);
   const { id } = useParams(); // Get item ID from the URL
-  const [{ foodItems,cartShow }] = useStateValue();
+  const [{ foodItems }] = useStateValue();
   // const product = foodItems.find((item) => item.id === Number(id));
-  
   const { state } = useLocation();
   const product = state?.product;
   useEffect(() => {

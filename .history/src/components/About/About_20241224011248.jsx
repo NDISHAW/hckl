@@ -9,6 +9,8 @@ import Slides from "./Principles/Slides";
 import History from "./History/History";
 import CartContainer from "../Cart/CartContainer";
 import { useStateValue } from "../../context/StateProvider"
+import About3 from './Content/About3';
+import Header from "../Header/Header";
 
 
 
@@ -35,10 +37,12 @@ export default function About() {
       data-aos="fade-up-right"
       // data-aos-duration="1000"
     >
+
       {/* <Slide /> */}
-      <Slider />
-      <Content />
-      <Slides />
+      <About3 />
+      {/* <Slider /> */}
+      {/* <Content /> */}
+      {/* <Slides /> */}
       {/* <div
         className="w-screen h-auto flex flex-col bg-primary py-8"
         data-aos="fade-up-right"
