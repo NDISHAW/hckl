@@ -369,7 +369,7 @@ const data = [
     id: 1,
     colorDeep: "#3E4659",
     colorLite: "#FFFFFF",
-    // mainText: "Microscopes",
+    mainText: "Microscopes",
     subText:
       "Euromex top level zoom microscopes are perfect for analyzing all kinds of material surfaces or to observe and prepare biological samples.",
     shadow: "0px 10px 20px rgba(78, 112, 149, 0.8)",
@@ -381,7 +381,7 @@ const data = [
     id: 5,
     colorDeep: "#13456E",
     colorLite: "#FFFFFF",
-    // mainText: "Nexuszoom",
+    mainText: "Nexuszoom",
     subText:
       "The NexiusZoom stereo microscopes of Euromex enable examining your specimen with high-performance precision.  ",
     shadow: "0px 10px 20px rgba(67, 30, 30, 0.8)",
