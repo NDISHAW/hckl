@@ -381,7 +381,7 @@ const data = [
     id: 5,
     colorDeep: "#13456E",
     colorLite: "#FFFFFF",
-    mainText: "Nexuszoom",
+    mainText: "nexuszoom",
     subText:
       "The NexiusZoom stereo microscopes of Euromex enable examining your specimen with high-performance precision.  ",
     shadow: "0px 10px 20px rgba(67, 30, 30, 0.8)",
@@ -395,7 +395,7 @@ const data = [
     colorLite: "#D6E6F3",
     mainText: "Eldon",
     subText:
-      "Eldoncards for ABO and RHD blood grouping.",
+      "Eldoncards for ABO and RHD bloof grouping.",
     shadow: "0px 10px 20px rgba(130, 134, 99, 0.8)",
     mobileShadow: "0px 5px 20px rgba(130, 134, 99, 0.8)",
     img: eldon,

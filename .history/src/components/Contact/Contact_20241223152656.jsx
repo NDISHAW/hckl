@@ -46,7 +46,7 @@ const Contact = ({ onClose, open }) => {
       )
       .then(
         (result) => {
-          // console.log(result.text);
+          console.log(result.text);
           // Clear all input field values
           form.current.reset();
           // Success toast message

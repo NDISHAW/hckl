@@ -46,14 +46,14 @@ const Contact = ({ onClose, open }) => {
       )
       .then(
         (result) => {
-          // console.log(result.text);
+          console.log(result.text);
           // Clear all input field values
           form.current.reset();
           // Success toast message
           toast.success("Email send Successfully");
         },
         (error) => {
-          // console.log(error.text);
+          console.log(error.text);
           toast.error(error.text);
         }
       );

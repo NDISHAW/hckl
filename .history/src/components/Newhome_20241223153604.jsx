@@ -342,8 +342,7 @@ const Hero = ({ colorDeep, mainText, subText, shadow, mobileShadow, img, link })
         <div className="flex flex-col gap-4 w-full lg:w-1/2 text-white">
           {/* Text */}
           <h1 className="md:text-5xl text-4xl font-bold leading-tight text-textColor">
-            {/* We're about  */}
-            <span style={{ color: colorDeep }}>{mainText}!</span>
+            We're about <span style={{ color: colorDeep }}>{mainText}!</span>
           </h1>
           <p className="leading-normal md:text-2xl text-lg text-textColor">{subText}</p>
 
@@ -371,7 +370,7 @@ const data = [
     colorLite: "#FFFFFF",
     mainText: "Microscopes",
     subText:
-      "Euromex top level zoom microscopes are perfect for analyzing all kinds of material surfaces or to observe and prepare biological samples.",
+      "The NexiusZoom stereo microscopes of Euromex enable examining your specimen with high-performance precision.",
     shadow: "0px 10px 20px rgba(78, 112, 149, 0.8)",
     mobileShadow: "0px 5px 20px rgba(78, 112, 149, 0.8)",
     link:"https://www.euromex.com/en/",
@@ -381,9 +380,9 @@ const data = [
     id: 5,
     colorDeep: "#13456E",
     colorLite: "#FFFFFF",
-    mainText: "Nexuszoom",
+    mainText: "nexuszoom",
     subText:
-      "The NexiusZoom stereo microscopes of Euromex enable examining your specimen with high-performance precision.  ",
+      "Euromex top level zoom microscopes are perfect for analyzing all kinds of material surfaces or to observe and prepare biological samples. ",
     shadow: "0px 10px 20px rgba(67, 30, 30, 0.8)",
     mobileShadow: "0px 5px 20px rgba(67, 30, 30, 0.8)",
     img: nexuszoom,
@@ -395,7 +394,7 @@ const data = [
     colorLite: "#D6E6F3",
     mainText: "Eldon",
     subText:
-      "Eldoncards for ABO and RHD blood grouping.",
+      "Transform Your Skin, Unleash Your Beauty: Promoil's Argan Oil Magic.",
     shadow: "0px 10px 20px rgba(130, 134, 99, 0.8)",
     mobileShadow: "0px 5px 20px rgba(130, 134, 99, 0.8)",
     img: eldon,
@@ -405,9 +404,9 @@ const data = [
     id: 3,
     colorDeep: "#431e1e",
     colorLite: "#FFFFFF",
-    mainText: "Medcon",
+    mainText: "medcon",
     subText:
-      "Diagnostics for Medical Connection .",
+      "Reveal Your Radiance with Promoil: Where Beauty Meets Nature's Best.",
     shadow: "0px 10px 20px rgba(67, 30, 30, 0.8)",
     mobileShadow: "0px 5px 20px rgba(67, 30, 30, 0.8)",
     img: medcon,
@@ -417,9 +416,9 @@ const data = [
     id: 4,
     colorDeep: "#35553f",
     colorLite: "#F3F1F1",
-    mainText: "Euroimmune",
+    mainText: "euroimmune",
     subText:
-      "Wide range of reagents for medical laboratory diagnostics. The main focus is on test systems for antibodies in patient serum.",
+      "Reveal Your Radiance with Promoil: Where Beauty Meets Nature's Best.",
     shadow: "0px 10px 20px rgba(67, 30, 30, 0.8)",
     mobileShadow: "0px 5px 20px rgba(67, 30, 30, 0.8)",
     img: euroimmune,
@@ -429,9 +428,9 @@ const data = [
     id: 6,
     colorDeep: "#13456E",
     colorLite: "#FFFFFF",
-    mainText: "Evermed",
+    mainText: "evermed",
     subText:
-      "Experts in professional refrigeration for over 60 years",
+      "Experts in professional refrigiration for over 60 years",
     shadow: "0px 10px 20px rgba(67, 30, 30, 0.8)",
     mobileShadow: "0px 5px 20px rgba(67, 30, 30, 0.8)",
     img: evermed,
@@ -442,7 +441,7 @@ const data = [
     id: 7,
     colorDeep: "#13456E",
     colorLite: "#FFFFFF",
-    mainText: "Sigma",
+    mainText: "sigma",
     subText:
       "Laboratory centrifuges for highest demands",
     shadow: "0px 10px 20px rgba(67, 30, 30, 0.8)",
@@ -454,9 +453,9 @@ const data = [
     id: 8,
     colorDeep: "#13456E",
     colorLite: "#FFFFFF",
-    mainText: "Fresenius Kabi",
+    mainText: "volumat1",
     subText:
-      "The common sense choice in smart infusion pumps and IV Solutions.",
+      "Reveal Your Radiance with Promoil: Where Beauty Meets Nature's Best.",
     shadow: "0px 10px 20px rgba(67, 30, 30, 0.8)",
     mobileShadow: "0px 5px 20px rgba(67, 30, 30, 0.8)",
     img: volumat1,
@@ -466,9 +465,9 @@ const data = [
     id: 8,
     colorDeep: "#E21F49",
     colorLite: "#EBEBEB",
-    mainText: "Euroimmun",
+    mainText: "euro",
     subText:
-      "Automation solution for the processing of chemiluminescence immunoassays (ChLIA) in the field of autoimmune and infection diagnostics as well as antigen detection.",
+      "Reveal Your Radiance with Promoil: Where Beauty Meets Nature's Best.",
     shadow: "0px 10px 20px rgba(67, 30, 30, 0.8)",
     mobileShadow: "0px 5px 20px rgba(67, 30, 30, 0.8)",
     img: euro,

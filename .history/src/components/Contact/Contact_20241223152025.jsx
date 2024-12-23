@@ -41,19 +41,19 @@ const Contact = ({ onClose, open }) => {
       .sendForm(
         "service_0wmgnbl",
         "template_xmmshxs",
-        form.current,
+        form,
         "Z0CbWT44L2zlf5Ag-"
       )
       .then(
         (result) => {
-          // console.log(result.text);
+          console.log(result.text);
           // Clear all input field values
           form.current.reset();
           // Success toast message
           toast.success("Email send Successfully");
         },
         (error) => {
-          // console.log(error.text);
+          console.log(error.text);
           toast.error(error.text);
         }
       );
@@ -70,8 +70,8 @@ const Contact = ({ onClose, open }) => {
    </p>
             <div className="xl:flex lg:flex pt-14 pb-5">
                 <div className="xl:w-3/5 lg:w-3/5 bg-gray-200 h-auto">
-                    <form id="contact" className="bg-white py-5 px-8" data-aos="fade-right"
-                    ref={form}
+                    <form id="contact" className="bg-white py-5 px-8" data-aos="fade-right
+                    ref={form}"
                     onSubmit={sendEmail}
                       data-aos-duration="1000">
                         <h1 className="xl:text-4xl text-3xl text-gray-800 font-extrabold mb-8">Send Us A Message</h1>

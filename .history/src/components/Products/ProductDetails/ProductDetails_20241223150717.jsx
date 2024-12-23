@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams, useLocation, Navigate, Link } from 'react-router-dom';
+import { useParams, useLocation, Navigate } from 'react-router-dom';
 import { useStateValue } from '../../../context/StateProvider';
 import { MdShoppingBasket } from "react-icons/md";
 import { motion } from "framer-motion";

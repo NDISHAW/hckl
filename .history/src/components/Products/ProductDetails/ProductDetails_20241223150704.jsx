@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams, useLocation, Navigate, Link } from 'react-router-dom';
+import { useParams, useLocation, Navigate } from 'react-router-dom';
 import { useStateValue } from '../../../context/StateProvider';
 import { MdShoppingBasket } from "react-icons/md";
 import { motion } from "framer-motion";
@@ -60,9 +60,9 @@ export default function ProductDetails({ data }) {
                             </ul>
                         </div>
                 <div class="flex flex-wrap gap-4 mt-8">
-                <Link to={"/contact"}>    
+                <Link to={"/contact"}></Link>    
                 <button type="button" class="min-w-[200px] px-4 py-3 bg-blue-300 hover:bg-blue-400 text-black text-sm font-semibold rounded"
-                onClick={() => Navigate(`/contact`)}>Contact Us</button></Link>
+                onClick={() => Navigate(`/contact`)}>Contact Us</button>
                 <button type="button" class="min-w-[200px] px-4 py-2.5 border border-blue-300 bg-transparent text-textcolor text-sm hover:bg-blue-400 text-black font-semibold rounded"onClick={() => setItems([...cartItems, item])}>
                 {/* <motion.div
                 whileTap={{ scale: 0.75 }}
