@@ -1,0 +1,10 @@
+.slide-section{
+    background-color: white;
+    padding: 30px;
+    border-radius: 50px 50px 50px 0px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    margin: 0 0 10px;
+    font-style: italic;
+}

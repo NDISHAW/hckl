@@ -1,0 +1,33 @@
+import './modal.css'
+import { MdClose } from "react-icons/md";
+
+function Modal({open, modalLable, children, custom_modal, onClose}) {
+
+  const handleClose = (e) => {
+    if(e.target.className === 'modalContainer'){
+      onClose()
+    }
+    return null
+  }
+
+  if(open) {
+    return (
+      <div className="modalContainer" onClick={handleClose}>
+        <div className={`modal ${custom_modal}`}>
+          <div className="modal__head">
+            <h2>{modalLable}</h2>
+            <span className="modal__close text-blue-500 font-bold" onClick={onClose}>
+              {" "}
+              <MdClose/>
+              {" "}
+            </span>
+          </div>
+          {children}
+        </div>
+      </div>
+    );
+  }
+  return null
+}
+
+export default Modal

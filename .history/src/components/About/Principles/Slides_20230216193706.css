@@ -1,0 +1,18 @@
+.slide-section{
+    background-color: white;
+    padding: 30px;
+    border-radius: 50px 50px 50px 0px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    margin: 0 0 10px;
+    font-style: italic;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 80px 0 80px;
+        background-image: url("../../../src/assets/Testimonial/bg-1.jpg");
+        background-position: center;
+        background-attachment: fixed;
+        position: relative;
+        z-index: -1;
+}

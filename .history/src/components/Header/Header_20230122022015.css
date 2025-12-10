@@ -1,0 +1,19 @@
+/* main {
+    padding: 2em;
+    font-family: sans-serif;
+} */
+header{
+    /* background-color: #f5f3f3 ; */
+    transition: transform 150ms ease-in-out;
+    height: 5em;
+    position: sticky;
+    top: 0;
+    line-height: 4em;
+    
+}
+
+header.nav-bar--hidden {
+    transform: translateY(-100%);
+}
+
+.
