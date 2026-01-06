@@ -12,9 +12,6 @@ import "aos/dist/aos.css";
 import HomeContainer from './components/HomeContainer';
 import Products from "./components/Products/Products";
 import Footer from "./components/About/Footer/Footer";
-// import MyApp from "./components/Admin/pages/MyApp";
-// import Layout from './components/Admin/components/Layout';
-// import Home from './components/Admin/Home';
 import TaskManager from "./components/Manage/TaskManager";
 import { MdAdminPanelSettings } from "react-icons/md";
 import Contact from './components/Contact/Contact';
@@ -37,22 +34,12 @@ const App = () => {
 
   const fetchData = async () => {
     await getAllFoodItems().then((data) => {
-      // console.log(data);
       dispatch({
         type: actionType.SET_FOOD_ITEMS,
         foodItems: data,
       });
     });
   };
-  // const fetchReagents = async () => {
-  //   await getAllLabReagents().then((data) => {
-  //     console.log("getAllLabReagents", data);
-  //     dispatch({
-  //       type: actionType.SET_LAB_REAGENTS,
-  //       LabReagents: data,
-  //     });
-  //   });
-  // };
   const fetchReagents = async () => {
     try {
       const labReagents = await getAllLabReagents();
@@ -62,7 +49,6 @@ const App = () => {
         type: actionType.SET_LAB_REAGENTS,
         LabReagents: labReagents,
       });
-      // console.log("getAllLabReagents", labReagents);
     } catch (error) {
       console.error("Error fetching lab reagents:", error);
     }
@@ -87,7 +73,7 @@ const App = () => {
       {/* <Slider /> */}
       <div className="w-auto h-auto flex flex-col bg-primary scrollbar-hide">
         <Header /> <br />
-        <main className="mt- md:mt-2  px-4 md:px-16 py-4 w-full scrollbar-hide">
+        <main className="md:mt-2  px-4 md:px-16 py-4 w-full scrollbar-hide">
           <Routes>
             <Route exact path="/*" element={<Newhome />} />
             <Route path="/products" element={<Products />} />

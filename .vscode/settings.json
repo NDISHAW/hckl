@@ -1,3 +1,6 @@
 {
-    "search.smartCase": true
+    "search.smartCase": true,
+    "editor.wordWrap": "on",
+    "editor.wordWrapColumn": 80,
+    "editor.rulers": [80]
 }

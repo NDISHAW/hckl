@@ -15,7 +15,6 @@ const HomeContainer = () => {
         className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full h-screen bg-transparent md:mb-10"
         id="home "
         data-aos="fade-up-left"
-        // data-aos-duration="3000"
       >
         <div className="py-2 flex-1 flex flex-col items-start justify-center gap-6">
           <div className="flex items-center gap-2 justify-center bg-Main-100 px-4 py-1 rounded-full bg-transparent">
@@ -43,21 +42,9 @@ const HomeContainer = () => {
           </Link>
         </div>
         <div className="py-2 flex-1 flex items-center relative ">
-          {/* <img
-            src={hrobg}
-            className=" ml-auto h-450 w-full lg:w-auto lg:h-650 md:h-400 "
-            alt="hero-bg"
-          /> */}
           <Slider />
-
-          {/* <div className="w-full h-full absolute top-0 left-0 bottom-0 flex items-center justify-center lg:px-32  py-4 gap-5 flex-wrap">
-            
-          </div> */}
         </div>
       </section>
-      {/* 
-      <Content />
-      <Slides /> */}
     </>
   );
 };

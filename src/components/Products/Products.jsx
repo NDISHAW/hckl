@@ -1,32 +1,19 @@
 import React from 'react'
-// import MainContainer from '../MainContainer'
 import MenuContainer from '../MenuContainer'
-// import Slider from './LabComponents/Slider'
 import TabsComponent from './LabComponents/Tabs'
 import './Products.css'
-import NotFound from "../../img/NotFound.svg"
 import Veterenary from './VETERENART/Veterenary.jsx'
-import Header from '../Header/Header.jsx'
 
 export default function Products({ color }) {
   const [openTab, setOpenTab] = React.useState(1);
   return (
-    // <>
-    // <Header
-    //   //  colorDeep={colorDeep}
-    //    />
     <div
       className="w-auto h-auto flex flex-col bg-primary mt-8"
       data-aos="fade-right"
       data-aos-duration="3000"
     >
-     
       <section className="w-full ">
-        {/* <p className="text-2xl font-semibold capitalize text-headingColor relative before:absolute before:rounded-lg before:content before:w-16 before:h-1 before:-bottom-2 before:left-0 before:bg-gradient-to-tr from-blue-300 to-blue-900 transition-all ease-in-out duration-100 mr-auto">
-          Our Products
-        </p> */}
         <div className="w-full">
-          {/* Tabs  */}
           <ul
             className="flex mb-0 list-none flex-wrap pt-1 pb-4 flex-row"
             role="tablist"
@@ -71,8 +58,6 @@ export default function Products({ color }) {
                 Laboratory Products
               </a>
             </li>
-
-            {/* Research Products */}
             <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
               <a
                 className={
@@ -93,7 +78,6 @@ export default function Products({ color }) {
               </a>
             </li>
           </ul>
-          {/* general products */}
           <div className="relative flex flex-col min-w-0 break-words w-full mb-1 shadow-lg rounded">
             <div className="px-4 py-0 flex-auto">
               <div className="tab-content tab-space">
@@ -107,7 +91,6 @@ export default function Products({ color }) {
                 >
                   <MenuContainer />
                 </div>
-                {/* Laboratory Products */}
                 <div
                   className={
                     openTab === 2
@@ -118,7 +101,6 @@ export default function Products({ color }) {
                 >
                   <TabsComponent />
                 </div>
-                {/* Veterenary Products */}
                 <div
                   className={
                     openTab === 3
@@ -129,7 +111,6 @@ export default function Products({ color }) {
                 >
                   <Veterenary/>                  
                 </div>
-                {/* Research Products */}
                 <div
                   className={
                     openTab === 4
@@ -139,31 +120,12 @@ export default function Products({ color }) {
                   id="link4"
                 >
                   <Veterenary />
-                  {/* <div className="w-full flex flex-col items-center justify-center">
-                    <img src={NotFound} alt="img" className="h-340" />
-                    <p className="text-xl text-headingColor font-semibold my-2">
-                      Items Not Available For Now Contact us For More Details
-                    </p>
-                  </div> */}
                 </div>
               </div>
             </div>
-            {/* <div className="w-full">
-              <RowContainer
-                scrollValue={scrollValue}
-                flag={false}
-                data={foodItems?.filter((n) => n.category == filter)}
-              />
-            </div> */}
           </div>
         </div>
       </section>
-      {/* <Slider/> */}
-      {/* <TabsComponent /> */}
-      {/* <MainContainer/> */}
-      {/* <MenuContainer /> */}
-      {/* <EmailOrderForm/> */}
     </div>
-    // </>
   );
 }
