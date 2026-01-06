@@ -678,4 +678,4 @@ const Newhome = () => {
   );
 };
 
-export default Newhome;
+export default HeroCarousel;

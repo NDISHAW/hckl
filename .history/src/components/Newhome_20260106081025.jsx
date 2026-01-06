@@ -292,41 +292,42 @@
 // export default Newhome
 
 
-// import React from "react";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import "swiper/css";
-// import "swiper/css/pagination";
-// import "swiper/css/effect-fade";
-// import { Autoplay, EffectFade, Pagination } from "swiper/modules";
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/effect-fade";
+import { Autoplay, EffectFade, Pagination } from "swiper/modules";
 
-// import microscopes from "../img/microscope.jpg";
-// import eldon  from "../img/eldon.jpeg";
-// import medcon from "../img/medcon.jpeg"; 
-// import Slider from "./About/Slider/Slider";
-// import euroimmune from "../img/euroimmune.jpg";
-// import nexuszoom from "../img/nexuszoom.jpeg";
-// // import evermed from "../img/evermed1.png";
-// import evermed from "../img/evermed.jpg";
-// import sigma from "../img/sigma.jpeg";
-// import volumat1 from "../img/volumat1.png";
-// import centrifuge from "../img/centrifuge.png";
-// import euro from "../img/euro.jpg";
-// import { Link } from "react-router-dom";
+import microscopes from "../img/microscope.jpg";
+import eldon  from "../img/eldon.jpeg";
+import medcon from "../img/medcon.jpeg"; 
+import Slider from "./About/Slider/Slider";
+import euroimmune from "../img/euroimmune.jpg";
+import nexuszoom from "../img/nexuszoom.jpeg";
+// import evermed from "../img/evermed1.png";
+import evermed from "../img/evermed.jpg";
+import sigma from "../img/sigma.jpeg";
+import volumat1 from "../img/volumat1.png";
+import centrifuge from "../img/centrifuge.png";
+import euro from "../img/euro.jpg";
+import { Link } from "react-router-dom";
 
-// const Button = ({ className, onClick, text, style }) => {
-//   return (
-//     <button
-//       type="button"
-//       onClick={onClick}
-//       style={style}
-//       className={`${className} text-white rounded-full transform transition hover:scale-110 duration-300 ease-in-out z-50`}
-//     >
-//       {text}
-//     </button>
-//   );
-// };
-
-// const Hero = ({ colorDeep, mainText, subText, shadow, mobileShadow, img, link }) => {
+const Button = ({ className, onClick, text, style }) => {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      style={style}
+      className={`${className} text-white rounded-full transform transition hover:scale-110 duration-300 ease-in-out z-50`}
+    >
+      {text}
+    </button>
+  );
+};
+// 
+/o const Hero = ({ colorDeep, mainText, subText, shadow, mobileShadow, img, link }) => {
+  nent
 //   return (
 //     <main className="relative w-full h-screen">
 //       {/* Background Image */}
@@ -365,317 +366,145 @@
 //   );
 // };
 
-// const data = [
-//   {
-//     id: 1,
-//     colorDeep: "#3E4659",
-//     colorLite: "#FFFFFF",
-//     // mainText: "Microscopes",
-//     subText:
-//       "Euromex top level zoom microscopes are perfect for analyzing all kinds of material surfaces or to observe and prepare biological samples.",
-//     shadow: "0px 10px 20px rgba(78, 112, 149, 0.8)",
-//     mobileShadow: "0px 5px 20px rgba(78, 112, 149, 0.8)",
-//     link:"https://www.euromex.com/en/",
-//     img: microscopes,
-//   },
-//   {
-//     id: 5,
-//     colorDeep: "#13456E",
-//     colorLite: "#FFFFFF",
-//     // mainText: "Nexuszoom",
-//     subText:
-//       "The NexiusZoom stereo microscopes of Euromex enable examining your specimen with high-performance precision.  ",
-//     shadow: "0px 10px 20px rgba(67, 30, 30, 0.8)",
-//     mobileShadow: "0px 5px 20px rgba(67, 30, 30, 0.8)",
-//     img: nexuszoom,
-//     link:"https://www.euromex.com/en/"
-//   },
-//   {
-//     id: 2,
-//     colorDeep: "#B60313",
-//     colorLite: "#D6E6F3",
-//     mainText: "Eldon",
-//     subText:
-//       "Eldoncards for ABO and RHD blood grouping.",
-//     shadow: "0px 10px 20px rgba(130, 134, 99, 0.8)",
-//     mobileShadow: "0px 5px 20px rgba(130, 134, 99, 0.8)",
-//     img: eldon,
-//     link:"https://eldoncard.com/"
-//   },
-//   {
-//     id: 3,
-//     colorDeep: "#431e1e",
-//     colorLite: "#FFFFFF",
-//     mainText: "Medcon",
-//     subText:
-//       "Diagnostics for Medical Connection .",
-//     shadow: "0px 10px 20px rgba(67, 30, 30, 0.8)",
-//     mobileShadow: "0px 5px 20px rgba(67, 30, 30, 0.8)",
-//     img: medcon,
-//     link:"http://www.medconn.com/en"
-//   },
-//   {
-//     id: 4,
-//     colorDeep: "#35553f",
-//     colorLite: "#F3F1F1",
-//     mainText: "Euroimmune",
-//     subText:
-//       "Wide range of reagents for medical laboratory diagnostics. The main focus is on test systems for antibodies in patient serum.",
-//     shadow: "0px 10px 20px rgba(67, 30, 30, 0.8)",
-//     mobileShadow: "0px 5px 20px rgba(67, 30, 30, 0.8)",
-//     img: euroimmune,
-//     link:"https://www.euroimmun.com/"
-//   },        
-//   {
-//     id: 6,
-//     colorDeep: "#13456E",
-//     colorLite: "#FFFFFF",
-//     mainText: "Evermed",
-//     subText:
-//       "Experts in professional refrigeration for over 60 years",
-//     shadow: "0px 10px 20px rgba(67, 30, 30, 0.8)",
-//     mobileShadow: "0px 5px 20px rgba(67, 30, 30, 0.8)",
-//     img: evermed,
-//     link:"https://www.evermed.it/en/"
-//   },
-  
-//   {
-//     id: 7,
-//     colorDeep: "#13456E",
-//     colorLite: "#FFFFFF",
-//     mainText: "Sigma",
-//     subText:
-//       "Laboratory centrifuges for highest demands",
-//     shadow: "0px 10px 20px rgba(67, 30, 30, 0.8)",
-//     mobileShadow: "0px 5px 20px rgba(67, 30, 30, 0.8)",
-//     img: sigma,
-//     link:"https://www.sigma-zentrifugen.de/en"
-//   },
-//   {
-//     id: 8,
-//     colorDeep: "#13456E",
-//     colorLite: "#FFFFFF",
-//     mainText: "Fresenius Kabi",
-//     subText:
-//       "The common sense choice in smart infusion pumps and IV Solutions.",
-//     shadow: "0px 10px 20px rgba(67, 30, 30, 0.8)",
-//     mobileShadow: "0px 5px 20px rgba(67, 30, 30, 0.8)",
-//     img: volumat1,
-//     link:"https://www.agiliasystem.com/"
-//   },
-//   {
-//     id: 8,
-//     colorDeep: "#E21F49",
-//     colorLite: "#EBEBEB",
-//     // mainText: "Euroimmun",
-//     subText:
-//       "Automation solution for the processing of chemiluminescence immunoassays (ChLIA) in the field of autoimmune and infection diagnostics as well as antigen detection.",
-//     shadow: "0px 10px 20px rgba(67, 30, 30, 0.8)",
-//     mobileShadow: "0px 5px 20px rgba(67, 30, 30, 0.8)",
-//     img: euro,
-//     link:"https://www.euroimmun.com/"
-//   },
-// ];
-
-// const NewHome = () => {
-//   return (
-//     <Swiper
-//       spaceBetween={30}
-//       speed={1000}
-//       pagination={{ clickable: true }}
-//       autoplay={{ delay: 3000, disableOnInteraction: false }}
-//       effect={"fade"}
-//       fadeEffect={{ crossFade: true }}
-//       modules={[Autoplay, EffectFade, Pagination]}
-//       className="mySwiper"
-//     >
-//       {data.map(({ id, colorDeep, mainText, subText, shadow, mobileShadow, img, link }) => (
-//         <SwiperSlide key={id} className="relative w-full h-screen">
-//           <Hero
-//             colorDeep={colorDeep}
-//             mainText={mainText}
-//             subText={subText}
-//             shadow={shadow}
-//             mobileShadow={mobileShadow}
-//             img={img}
-//             link={link} // Pass the link property here
-//           />
-//         </SwiperSlide>
-//       ))}
-//     </Swiper>
-//   );
-// };
-
-// export default NewHome;
-
-
-
-import { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-
-const slides = [
+const data = [
   {
     id: 1,
-    title: "NexiusZoom",
-    subtitle: "NZ.9047",
-    description: "The NexiusZoom stereo microscopes of Euromex enable examining your specimen with high-performance precision.",
-    link: "https://www.euromex.com/en/",
-    image: "https://hckl.co.ke/static/media/nexuszoom.aad28d90e641d7f3b6b5.jpeg",
-  },
-  {
-    id: 2,
-    title: "Euromex",
-    subtitle: "Microscopes",
-    description: "Euromex top level zoom microscopes are perfect for analyzing all kinds of material surfaces or to observe and prepare biological samples.",
-    link: "https://www.euromex.com/en/",
-    image: "https://hckl.co.ke/static/media/microscope.e18c5bf7de5a0fae65bb.jpg",
-  },
-  {
-    id: 3,
-    title: "Eldon",
-    subtitle: "Blood Grouping",
-    description: "Eldoncards for ABO and RHD blood grouping.",
-    link: "https://eldoncard.com/",
-    image: "https://hckl.co.ke/static/media/eldon.cacef4865a167b3bb6f3.jpeg",
-  },
-  {
-    id: 4,
-    title: "Euroimmune",
-    subtitle: "Diagnostics",
-    description: "Wide range of reagents for medical laboratory diagnostics. The main focus is on test systems for antibodies in patient serum.",
-    link: "https://www.euroimmun.com/",
-    image: "https://hckl.co.ke/static/media/euroimmune.b4204bc17edbddc1c830.jpg",
+    colorDeep: "#3E4659",
+    colorLite: "#FFFFFF",
+    // mainText: "Microscopes",
+    subText:
+      "Euromex top level zoom microscopes are perfect for analyzing all kinds of material surfaces or to observe and prepare biological samples.",
+    shadow: "0px 10px 20px rgba(78, 112, 149, 0.8)",
+    mobileShadow: "0px 5px 20px rgba(78, 112, 149, 0.8)",
+    link:"https://www.euromex.com/en/",
+    img: microscopes,
   },
   {
     id: 5,
-    title: "Sigma",
-    subtitle: "Centrifuges",
-    description: "Laboratory centrifuges for highest demands.",
-    link: "https://www.sigma-zentrifugen.de/en",
-    image: "https://hckl.co.ke/static/media/sigma.6ec7d574d0cd53a23b40.jpeg",
+    colorDeep: "#13456E",
+    colorLite: "#FFFFFF",
+    // mainText: "Nexuszoom",
+    subText:
+      "The NexiusZoom stereo microscopes of Euromex enable examining your specimen with high-performance precision.  ",
+    shadow: "0px 10px 20px rgba(67, 30, 30, 0.8)",
+    mobileShadow: "0px 5px 20px rgba(67, 30, 30, 0.8)",
+    img: nexuszoom,
+    link:"https://www.euromex.com/en/"
+  },
+  {
+    id: 2,
+    colorDeep: "#B60313",
+    colorLite: "#D6E6F3",
+    mainText: "Eldon",
+    subText:
+      "Eldoncards for ABO and RHD blood grouping.",
+    shadow: "0px 10px 20px rgba(130, 134, 99, 0.8)",
+    mobileShadow: "0px 5px 20px rgba(130, 134, 99, 0.8)",
+    img: eldon,
+    link:"https://eldoncard.com/"
+  },
+  {
+    id: 3,
+    colorDeep: "#431e1e",
+    colorLite: "#FFFFFF",
+    mainText: "Medcon",
+    subText:
+      "Diagnostics for Medical Connection .",
+    shadow: "0px 10px 20px rgba(67, 30, 30, 0.8)",
+    mobileShadow: "0px 5px 20px rgba(67, 30, 30, 0.8)",
+    img: medcon,
+    link:"http://www.medconn.com/en"
+  },
+  {
+    id: 4,
+    colorDeep: "#35553f",
+    colorLite: "#F3F1F1",
+    mainText: "Euroimmune",
+    subText:
+      "Wide range of reagents for medical laboratory diagnostics. The main focus is on test systems for antibodies in patient serum.",
+    shadow: "0px 10px 20px rgba(67, 30, 30, 0.8)",
+    mobileShadow: "0px 5px 20px rgba(67, 30, 30, 0.8)",
+    img: euroimmune,
+    link:"https://www.euroimmun.com/"
+  },        
+  {
+    id: 6,
+    colorDeep: "#13456E",
+    colorLite: "#FFFFFF",
+    mainText: "Evermed",
+    subText:
+      "Experts in professional refrigeration for over 60 years",
+    shadow: "0px 10px 20px rgba(67, 30, 30, 0.8)",
+    mobileShadow: "0px 5px 20px rgba(67, 30, 30, 0.8)",
+    img: evermed,
+    link:"https://www.evermed.it/en/"
+  },
+  
+  {
+    id: 7,
+    colorDeep: "#13456E",
+    colorLite: "#FFFFFF",
+    mainText: "Sigma",
+    subText:
+      "Laboratory centrifuges for highest demands",
+    shadow: "0px 10px 20px rgba(67, 30, 30, 0.8)",
+    mobileShadow: "0px 5px 20px rgba(67, 30, 30, 0.8)",
+    img: sigma,
+    link:"https://www.sigma-zentrifugen.de/en"
+  },
+  {
+    id: 8,
+    colorDeep: "#13456E",
+    colorLite: "#FFFFFF",
+    mainText: "Fresenius Kabi",
+    subText:
+      "The common sense choice in smart infusion pumps and IV Solutions.",
+    shadow: "0px 10px 20px rgba(67, 30, 30, 0.8)",
+    mobileShadow: "0px 5px 20px rgba(67, 30, 30, 0.8)",
+    img: volumat1,
+    link:"https://www.agiliasystem.com/"
+  },
+  {
+    id: 8,
+    colorDeep: "#E21F49",
+    colorLite: "#EBEBEB",
+    // mainText: "Euroimmun",
+    subText:
+      "Automation solution for the processing of chemiluminescence immunoassays (ChLIA) in the field of autoimmune and infection diagnostics as well as antigen detection.",
+    shadow: "0px 10px 20px rgba(67, 30, 30, 0.8)",
+    mobileShadow: "0px 5px 20px rgba(67, 30, 30, 0.8)",
+    img: euro,
+    link:"https://www.euroimmun.com/"
   },
 ];
 
-const Newhome = () => {
-  const [current, setCurrent] = useState(0);
-  const [isAnimating, setIsAnimating] = useState(false);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % slides.length);
-    }, 6000);
-    return () => clearInterval(timer);
-  }, []);
-
-  const next = () => {
-    if (!isAnimating) {
-      setIsAnimating(true);
-      setCurrent((prev) => (prev + 1) % slides.length);
-      setTimeout(() => setIsAnimating(false), 700);
-    }
-  };
-
-  const prev = () => {
-    if (!isAnimating) {
-      setIsAnimating(true);
-      setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
-      setTimeout(() => setIsAnimating(false), 700);
-    }
-  };
-
+const NewHome = () => {
   return (
-    <section className="relative h-[80vh] min-h-[500px] overflow-hidden bg-muted">
-      {/* Background Images with Blend Effect */}
-      {slides.map((slide, idx) => (
-        <div
-          key={slide.id}
-          className={`absolute inset-0 transition-all duration-700 ease-in-out ${
-            idx === current ? "opacity-100 scale-100" : "opacity-0 scale-105"
-          }`}
-          style={{ zIndex: idx === current ? 1 : 0 }}
-        >
-          {/* Main Image with blend modes */}
-          <div
-            className="absolute inset-0 bg-cover bg-center mix-blend-luminosity"
-            style={{ backgroundImage: `url(${slide.image})` }}
+    <Swiper
+      spaceBetween={30}
+      speed={1000}
+      pagination={{ clickable: true }}
+      autoplay={{ delay: 3000, disableOnInteraction: false }}
+      effect={"fade"}
+      fadeEffect={{ crossFade: true }}
+      modules={[Autoplay, EffectFade, Pagination]}
+      className="mySwiper"
+    >
+      {data.map(({ id, colorDeep, mainText, subText, shadow, mobileShadow, img, link }) => (
+        <SwiperSlide key={id} className="relative w-full h-screen">
+          <Hero
+            colorDeep={colorDeep}
+            mainText={mainText}
+            subText={subText}
+            shadow={shadow}
+            mobileShadow={mobileShadow}
+            img={img}
+            link={link} // Pass the link property here
           />
-          {/* Color overlay for phone merge style effect */}
-          <div 
-            className="absolute inset-0 bg-gradient-to-br from-primary/30 via-transparent to-accent/20 mix-blend-overlay" 
-          />
-          {/* Secondary overlay for depth */}
-          <div 
-            className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" 
-          />
-          {/* Soft vignette effect */}
-          <div 
-            className="absolute inset-0"
-            style={{
-              background: 'radial-gradient(ellipse at center, transparent 0%, hsl(var(--background) / 0.4) 100%)'
-            }}
-          />
-        </div>
+        </SwiperSlide>
       ))}
-
-      {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
-        <div
-          key={current}
-          className="max-w-2xl animate-fade-in"
-        >
-          <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-2 drop-shadow-lg">
-            {slides[current].title}
-          </h1>
-          <p className="text-3xl md:text-4xl font-light text-primary mb-6 drop-shadow-md">
-            {slides[current].subtitle}
-          </p>
-          <p className="text-lg text-muted-foreground mb-8 max-w-lg drop-shadow-sm">
-            {slides[current].description}
-          </p>
-          <a
-            href={slides[current].link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-8 py-3 text-base font-medium rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors duration-200 shadow-lg hover:shadow-xl"
-          >
-            View Our Principle
-          </a>
-        </div>
-      </div>
-
-      {/* Navigation */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex items-center gap-4">
-        <button
-          onClick={prev}
-          className="p-2 rounded-full bg-background/80 backdrop-blur-sm border border-border hover:bg-background transition-colors"
-          aria-label="Previous slide"
-        >
-          <ChevronLeft className="h-5 w-5 text-foreground" />
-        </button>
-        <div className="flex gap-2">
-          {slides.map((_, idx) => (
-            <button
-              key={idx}
-              onClick={() => setCurrent(idx)}
-              className={`h-3 rounded-full transition-all duration-300 ${
-                idx === current 
-                  ? "bg-primary w-8" 
-                  : "bg-muted-foreground/30 hover:bg-muted-foreground/50 w-3"
-              }`}
-              aria-label={`Go to slide ${idx + 1}`}
-            />
-          ))}
-        </div>
-        <button
-          onClick={next}
-          className="p-2 rounded-full bg-background/80 backdrop-blur-sm border border-border hover:bg-background transition-colors"
-          aria-label="Next slide"
-        >
-          <ChevronRight className="h-5 w-5 text-foreground" />
-        </button>
-      </div>
-    </section>
+    </Swiper>
   );
 };
 
-export default Newhome;
+export default NewHome;

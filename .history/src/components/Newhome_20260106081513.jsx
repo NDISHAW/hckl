@@ -556,7 +556,7 @@ const slides = [
   },
 ];
 
-const Newhome = () => {
+const HeroCarousel = () => {
   const [current, setCurrent] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
 
@@ -678,4 +678,4 @@ const Newhome = () => {
   );
 };
 
-export default Newhome;
+export default Hero;
